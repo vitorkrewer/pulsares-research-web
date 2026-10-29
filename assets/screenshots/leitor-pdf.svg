@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 780" fill="none">
+  <rect width="1280" height="780" rx="14" fill="#EFE9DC"/>
+  <!-- Top Reader Toolbar -->
+  <rect width="1280" height="58" fill="#162722"/>
+  <rect x="18" y="14" width="92" height="30" rx="6" fill="#253E37"/>
+  <text x="32" y="34" fill="#F7F3EB" font-family="sans-serif" font-size="12" font-weight="600">← Biblioteca</text>
+  <text x="128" y="34" fill="#F7F3EB" font-family="Georgia, serif" font-size="15.5" font-weight="bold">Local-First Software: You Own Your Data (Kleppmann et al., 2019)</text>
+  <rect x="690" y="14" width="136" height="30" rx="6" fill="#253E37"/>
+  <text x="710" y="34" fill="#F7F3EB" font-family="sans-serif" font-size="12" font-weight="600">Página 14 de 32</text>
+  <rect x="840" y="14" width="124" height="30" rx="6" fill="#C96140"/>
+  <text x="858" y="34" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="700">+ Nova Citação</text>
+  <rect x="976" y="14" width="142" height="30" rx="6" fill="#253E37"/>
+  <text x="994" y="34" fill="#FF9E6D" font-family="sans-serif" font-size="12" font-weight="600">✦ Assistente IA</text>
+  <rect x="1130" y="14" width="130" height="30" rx="6" fill="#253E37"/>
+  <text x="1148" y="34" fill="#F7F3EB" font-family="sans-serif" font-size="12" font-weight="600">Modo Janela ↗</text>
+
+  <!-- PDF Canvas Page -->
+  <rect x="64" y="82" width="740" height="668" rx="8" fill="#FFFFFF" stroke="#D5CBB8"/>
+  <text x="120" y="132" fill="#7C7365" font-family="sans-serif" font-size="11" font-weight="700">ACM SIGPLAN ONWARD! · PÁGINA 14</text>
+  <text x="120" y="172" fill="#162722" font-family="Georgia, serif" font-size="22" font-weight="bold">3.Os Sete Ideais do Software Local-First</text>
+  <text x="120" y="214" fill="#2A332E" font-family="Georgia, serif" font-size="15">Nos aplicativos tradicionais de desktop, o arquivo local é a fonte primária da</text>
+  <text x="120" y="240" fill="#2A332E" font-family="Georgia, serif" font-size="15">verdade. Em contraste, aplicações web tratam o navegador apenas como um terminal</text>
+  <text x="120" y="266" fill="#2A332E" font-family="Georgia, serif" font-size="15">temporário subordinado a um servidor remoto.</text>
+
+  <!-- Highlighted Anchor Passage -->
+  <rect x="116" y="294" width="632" height="84" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="126" y="320" fill="#162722" font-family="Georgia, serif" font-size="15" font-weight="bold">“No software local-first, a disponibilidade de leitura e escrita nunca depende da</text>
+  <text x="126" y="344" fill="#162722" font-family="Georgia, serif" font-size="15" font-weight="bold">rede: os dados residem permanentemente no dispositivo do pesquisador, garantindo</text>
+  <text x="126" y="368" fill="#162722" font-family="Georgia, serif" font-size="15" font-weight="bold">longevidade de décadas mesmo se o provedor deixar de existir.”</text>
+
+  <!-- Floating Selection Popover -->
+  <rect x="210" y="390" width="460" height="44" rx="10" fill="#162722"/>
+  <text x="230" y="417" fill="#FF9E6D" font-family="sans-serif" font-size="12" font-weight="700">✦ Destacar</text>
+  <text x="322" y="417" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="600">+ Nota Ancorada</text>
+  <text x="448" y="417" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="600">❝ Citação ABNT</text>
+  <text x="568" y="417" fill="#A7F3D0" font-family="sans-serif" font-size="12" font-weight="600">Sintetizar IA</text>
+
+  <text x="120" y="476" fill="#2A332E" font-family="Georgia, serif" font-size="15">Para a pesquisa científica e elaboração de teses, essa propriedade assegura que</text>
+  <text x="120" y="502" fill="#2A332E" font-family="Georgia, serif" font-size="15">o corpus bibliográfico, as âncoras de página e os fichamentos permaneçam íntegros</text>
+  <text x="120" y="528" fill="#2A332E" font-family="Georgia, serif" font-size="15">em formatos abertos como SQLite, Markdown e PDF.</text>
+
+  <!-- Right Side Research & Anchor Drawer -->
+  <rect x="832" y="82" width="424" height="668" rx="10" fill="#FAF7F2" stroke="#D5CBB8"/>
+  <rect x="832" y="82" width="424" height="48" rx="10" fill="#EFE9DC"/>
+  <text x="854" y="111" fill="#162722" font-family="sans-serif" font-size="12.5" font-weight="700">ÂNCORAS DA OBRA (18) · CITAÇÕES ABNT · IA</text>
+
+  <!-- Anchor Card 1 -->
+  <rect x="852" y="148" width="384" height="190" rx="8" fill="#FFFFFF" stroke="#C96140" stroke-width="1.5"/>
+  <rect x="868" y="164" width="96" height="20" rx="4" fill="#FBECE7"/>
+  <text x="876" y="178" fill="#C96140" font-family="sans-serif" font-size="10.5" font-weight="700">CITAÇÃO DIRETA</text>
+  <rect x="1152" y="164" width="68" height="20" rx="4" fill="#E8F0ED"/>
+  <text x="1164" y="178" fill="#162722" font-family="sans-serif" font-size="10.5" font-weight="700">Pág. 14</text>
+  <text x="868" y="206" fill="#162722" font-family="Georgia, serif" font-size="13" font-style="italic">“No software local-first, a disponibilidade de leitura e escrita nunca depende da rede...”</text>
+  <text x="868" y="246" fill="#5D645F" font-family="sans-serif" font-size="11.5" font-weight="600">Referência ABNT NBR 10520 / 6023 gerada:</text>
+  <rect x="868" y="256" width="352" height="44" rx="6" fill="#F7F3EB"/>
+  <text x="878" y="276" fill="#20352F" font-family="monospace" font-size="11">(KLEPPMANN et al., 2019, p. 14)</text>
+  <text x="878" y="292" fill="#5D645F" font-family="sans-serif" font-size="10.5">Vinculada à Tese: Cap. 2 Fundamentação Teórica</text>
+
+  <!-- Anchor Card 2 -->
+  <rect x="852" y="356" width="384" height="164" rx="8" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <rect x="868" y="372" width="110" height="20" rx="4" fill="#E8F0ED"/>
+  <text x="878" y="386" fill="#20352F" font-family="sans-serif" font-size="10.5" font-weight="700">NOTA DE ESTUDO</text>
+  <text x="1164" y="386" fill="#5D645F" font-family="sans-serif" font-size="10.5" font-weight="700">Pág. 08</text>
+  <text x="868" y="414" fill="#162722" font-family="sans-serif" font-size="13" font-weight="700">Comparação entre CRDTs e SQLite WAL Local</text>
+  <text x="868" y="438" fill="#4A524D" font-family="sans-serif" font-size="12">Conectar este argumento com a seção 2.3 da dissertação sobre soberania de dados científicos.</text>
+  <rect x="868" y="478" width="136" height="24" rx="6" fill="#EEF5F2"/>
+  <text x="880" y="494" fill="#20352F" font-family="sans-serif" font-size="11" font-weight="600">⇄ 3 Conexões no Grafo</text>
+
+  <!-- AI Assistant Box -->
+  <rect x="852" y="538" width="384" height="190" rx="8" fill="#162722"/>
+  <text x="872" y="566" fill="#FF9E6D" font-family="sans-serif" font-size="12" font-weight="700">✦ ASSISTENTE DE PARÁFRASE (CONSENTIMENTO ATIVO)</text>
+  <text x="872" y="592" fill="#E2ECE8" font-family="sans-serif" font-size="12">Síntese sugerida preservando a fonte original:</text>
+  <text x="872" y="618" fill="#B5C4BE" font-family="Georgia, serif" font-size="12.5">Segundo Kleppmann et al. (2019, p. 14), a arquitetura local-first assegura autonomia operacional e perenidade ao acervo científico independentemente de servidores externos.</text>
+  <rect x="872" y="684" width="166" height="28" rx="6" fill="#C96140"/>
+  <text x="888" y="702" fill="#FFFFFF" font-family="sans-serif" font-size="11.5" font-weight="600">Inserir como Rascunho</text>
+</svg>
+

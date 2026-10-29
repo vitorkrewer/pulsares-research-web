@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 780" fill="none">
+  <rect width="1280" height="780" rx="14" fill="#162722" fill-opacity="0.92"/>
+  <!-- Modal Window -->
+  <rect x="64" y="36" width="1152" height="708" rx="14" fill="#FAF7F2" stroke="#D5CBB8" stroke-width="2"/>
+  <text x="98" y="80" fill="#162722" font-family="Georgia, serif" font-size="22" font-weight="bold">Importar Documento para Projeto Acadêmico</text>
+  <text x="98" y="104" fill="#5D645F" font-family="sans-serif" font-size="12.5">Analise capítulos, seções e elementos pré-textuais (.docx, .odt, .doc), vincule bookmarks não detectados e preencha o modelo ABNT.</text>
+
+  <!-- Top Controls Bar -->
+  <rect x="98" y="122" width="1084" height="68" rx="8" fill="#EFE9DC" stroke="#D5CBB8"/>
+  <text x="116" y="144" fill="#162722" font-family="sans-serif" font-size="11" font-weight="700">Tipo de Projeto (Estrutura de Destino)</text>
+  <rect x="116" y="152" width="340" height="28" rx="6" fill="#FFFFFF" stroke="#D5CBB8"/>
+  <text x="128" y="170" fill="#162722" font-family="sans-serif" font-size="12">Dissertação de Mestrado — ABNT NBR 14724</text>
+
+  <text x="480" y="144" fill="#162722" font-family="sans-serif" font-size="11" font-weight="700">Tipo de Arquivo Enviado</text>
+  <rect x="480" y="152" width="280" height="28" rx="6" fill="#FFFFFF" stroke="#D5CBB8"/>
+  <text x="492" y="170" fill="#162722" font-family="sans-serif" font-size="12">Microsoft Word (.docx)</text>
+
+  <rect x="950" y="140" width="212" height="34" rx="7" fill="#FFFFFF" stroke="#D5CBB8"/>
+  <text x="972" y="162" fill="#162722" font-family="sans-serif" font-size="12" font-weight="600">Trocar arquivo (.docx)</text>
+
+  <!-- Stats Strip -->
+  <rect x="98" y="204" width="170" height="48" rx="7" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <text x="112" y="222" fill="#7C7365" font-family="sans-serif" font-size="10" font-weight="700">ARQUIVO (DOCX)</text>
+  <text x="112" y="241" fill="#162722" font-family="sans-serif" font-size="12.5" font-weight="700">dissertacao_v4.docx</text>
+
+  <rect x="280" y="204" width="170" height="48" rx="7" fill="#EFE9DC" stroke="#C96140"/>
+  <text x="294" y="222" fill="#C96140" font-family="sans-serif" font-size="10" font-weight="700">CAPÍTULOS &amp; SEÇÕES</text>
+  <text x="294" y="241" fill="#162722" font-family="sans-serif" font-size="13.5" font-weight="700">12 detectados</text>
+
+  <rect x="462" y="204" width="170" height="48" rx="7" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <text x="476" y="222" fill="#7C7365" font-family="sans-serif" font-size="10" font-weight="700">MATCHS AUTOMÁTICOS</text>
+  <text x="476" y="241" fill="#15803D" font-family="sans-serif" font-size="13.5" font-weight="700">10 Headings</text>
+
+  <rect x="644" y="204" width="170" height="48" rx="7" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <text x="658" y="222" fill="#7C7365" font-family="sans-serif" font-size="10" font-weight="700">BOOKMARKS MANUAIS</text>
+  <text x="658" y="241" fill="#1D4ED8" font-family="sans-serif" font-size="13.5" font-weight="700">2 vinculados</text>
+
+  <rect x="826" y="204" width="170" height="48" rx="7" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <text x="840" y="222" fill="#7C7365" font-family="sans-serif" font-size="10" font-weight="700">CAMPOS PRÉ-TEXTUAIS</text>
+  <text x="840" y="241" fill="#162722" font-family="sans-serif" font-size="13.5" font-weight="700">8/9 preenchidos</text>
+
+  <rect x="1008" y="204" width="174" height="48" rx="7" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <text x="1022" y="222" fill="#7C7365" font-family="sans-serif" font-size="10" font-weight="700">REFERÊNCIAS ABNT</text>
+  <text x="1022" y="241" fill="#162722" font-family="sans-serif" font-size="13.5" font-weight="700">28 extraídas</text>
+
+  <!-- Split View: Left Bookmark Linker & Right Model Structure Preview -->
+  <rect x="98" y="268" width="560" height="398" rx="8" fill="#FFFFFF" stroke="#D5CBB8"/>
+  <rect x="98" y="268" width="560" height="42" rx="8" fill="#EFE9DC"/>
+  <text x="116" y="294" fill="#162722" font-family="sans-serif" font-size="12" font-weight="700">PARÁGRAFOS DO DOCUMENTO (VINCULAR BOOKMARKS H1 / H2 / H3)</text>
+
+  <!-- Block Row 1 -->
+  <rect x="114" y="324" width="528" height="68" rx="6" fill="#FAF7F2" stroke="#C96140" stroke-width="1.5"/>
+  <text x="128" y="344" fill="#7C7365" font-family="sans-serif" font-size="10.5" font-weight="700">#12 · Heading 1 · Match Estilo</text>
+  <rect x="462" y="330" width="32" height="20" rx="4" fill="#C96140"/>
+  <text x="471" y="344" fill="#FFFFFF" font-family="sans-serif" font-size="10.5" font-weight="700">H1</text>
+  <rect x="498" y="330" width="32" height="20" rx="4" fill="#FFFFFF" stroke="#D5CBB8"/>
+  <text x="507" y="344" fill="#5D645F" font-family="sans-serif" font-size="10.5" font-weight="700">H2</text>
+  <text x="128" y="372" fill="#162722" font-family="sans-serif" font-size="12.5" font-weight="700">1 INTRODUÇÃO E PROBLEMA DE PESQUISA</text>
+
+  <!-- Block Row 2 -->
+  <rect x="114" y="404" width="528" height="68" rx="6" fill="#FAF7F2" stroke="#1D4ED8" stroke-width="1.5"/>
+  <text x="128" y="424" fill="#1D4ED8" font-family="sans-serif" font-size="10.5" font-weight="700">#28 · Vinculado Manualmente como Bookmark H2</text>
+  <rect x="462" y="410" width="32" height="20" rx="4" fill="#FFFFFF" stroke="#D5CBB8"/>
+  <text x="471" y="424" fill="#5D645F" font-family="sans-serif" font-size="10.5" font-weight="700">H1</text>
+  <rect x="498" y="410" width="32" height="20" rx="4" fill="#C96140"/>
+  <text x="507" y="424" fill="#FFFFFF" font-family="sans-serif" font-size="10.5" font-weight="700">H2</text>
+  <text x="128" y="452" fill="#162722" font-family="sans-serif" font-size="12.5" font-weight="700">1.1 Delimitação do Escopo Experimental</text>
+
+  <!-- Right Preview Pane -->
+  <rect x="676" y="268" width="506" height="398" rx="8" fill="#FFFFFF" stroke="#D5CBB8"/>
+  <rect x="676" y="268" width="506" height="42" rx="8" fill="#EFE9DC"/>
+  <text x="694" y="294" fill="#162722" font-family="sans-serif" font-size="12" font-weight="700">ESTRUTURA RESULTANTE NO MODELO (DISSERTAÇÃO)</text>
+
+  <rect x="694" y="324" width="470" height="92" rx="6" fill="#FAF7F2" stroke="#DDD4C3"/>
+  <text x="710" y="346" fill="#20352F" font-family="sans-serif" font-size="11" font-weight="700">CAMPOS PRÉ-TEXTUAIS PREENCHIDOS AUTOMATICAMENTE</text>
+  <text x="710" y="368" fill="#162722" font-family="sans-serif" font-size="11.5">• Título, Autor, Orientador, Instituição, Resumo (PT) e Abstract (EN)</text>
+  <text x="710" y="390" fill="#162722" font-family="sans-serif" font-size="11.5">• Palavras-chave e Keywords extraídas e normalizadas</text>
+
+  <rect x="694" y="430" width="470" height="62" rx="6" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <text x="710" y="454" fill="#C96140" font-family="sans-serif" font-size="12" font-weight="700">1  INTRODUÇÃO E PROBLEMA DE PESQUISA (1.420 palavras)</text>
+  <text x="710" y="476" fill="#5D645F" font-family="sans-serif" font-size="11">Guia Metodológico NBR 14724 vinculado automaticamente</text>
+
+  <rect x="718" y="502" width="446" height="58" rx="6" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <text x="734" y="526" fill="#20352F" font-family="sans-serif" font-size="12" font-weight="700">1.1  Delimitação do Escopo Experimental (640 palavras)</text>
+  <text x="734" y="546" fill="#5D645F" font-family="sans-serif" font-size="11">Subseção Nível 2 vinculada via Bookmark</text>
+
+  <!-- Modal Footer -->
+  <rect x="860" y="684" width="322" height="40" rx="8" fill="#C96140"/>
+  <text x="888" y="709" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="700">✦ Importar e Criar Dissertação (12 seções)</text>
+</svg>
+

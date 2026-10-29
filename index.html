@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Pulsares Research: Ambiente desktop local-first para leitura profunda de PDFs, anotações com âncoras resilientes, citações ABNT, grafo de conhecimento D3, fichamentos científicos e IDE de projetos acadêmicos." />
+  <link rel="icon" type="image/png" href="assets/pulsares-icon.png" />
+  <title>Pulsares Research — Onde a leitura profunda vira ciência conectada</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=0.7.1" />
+</head>
+
+<body>
+  <!-- HEADER FIXO -->
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Pulsares Research">
+      <img src="assets/pulsares-icon.png" alt="Logo Pulsares Research" />
+      <span>Pulsares Research</span>
+    </a>
+
+    <nav class="header-nav" aria-label="Navegação principal">
+      <a href="recursos.html">Recursos</a>
+      <a href="guia-usuario.html">Guia de Uso</a>
+      <a href="#arquitetura">Arquitetura</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="help.html">Ajuda &amp; FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="release.html">Releases</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-download-btn" href="#downloads">
+        <span>Baixar</span>
+        <span id="header-version-badge">v0.7.1</span>
+      </a>
+      <button class="menu-toggle-btn" id="mobile-menu-toggle" type="button" aria-label="Abrir menu de navegação"
+        aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- DRAWER MOBILE -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Navegação mobile" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="recursos.html">Recursos</a>
+      <a href="guia-usuario.html">Guia de Uso</a>
+      <a href="#arquitetura">Arquitetura Técnica</a>
+      <a href="screenshots.html">Galeria de Telas</a>
+      <a href="help.html">Ajuda &amp; FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="release.html">Notas de Release (Changelog)</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a class="btn-drawer-download" href="#downloads">
+        <span>Baixar Pulsares Research</span>
+      </a>
+      <span class="drawer-version-tag">Versão mais recente: v0.7.1</span>
+    </div>
+  </aside>
+
+  <main id="top">
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="starfield" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-pill">
+          <span class="pill-dot"></span>
+          <span id="hero-version-text">Pulsares Research v0.7.1 · 100% Local-First &amp; Acadêmico</span>
+        </div>
+
+        <h1>
+          Onde a leitura profunda vira<br />
+          <span class="gradient-text">ciência conectada.</span>
+        </h1>
+
+        <p class="hero-description">
+          Organize livros, artigos, teses e dissertações no seu próprio computador. Transforme trechos de leitura em
+          destaques com âncoras resilientes, citações ABNT automáticas, grafos de conhecimento, fichamentos científicos e
+          manuscritos completos sem perder a fonte original.
+        </p>
+
+        <div class="hero-actions">
+          <a class="cta-primary" id="hero-download-btn" href="#downloads">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+            </svg>
+            <span id="hero-download-text">Baixar para Windows</span>
+          </a>
+          <a class="cta-secondary" href="guia-usuario.html">
+            <span>Explorar Guia de Uso Interativo</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="hero-meta-strip">
+          <span class="hero-meta-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+            </svg>
+            100% Local-First (SQLite)
+          </span>
+          <span class="hero-meta-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+            </svg>
+            Normas ABNT (NBR 14724 · 6022 · 6023 · 10520)
+          </span>
+          <span class="hero-meta-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+            </svg>
+            Importador .docx · .odt · .doc
+          </span>
+          <span class="hero-meta-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+            </svg>
+            Windows · macOS · Linux
+          </span>
+        </div>
+      </div>
+
+      <!-- SIMULADOR INTERATIVO DA INTERFACE DO PULSARES RESEARCH -->
+      <div class="app-mockup-wrapper">
+        <div class="app-mockup-glow"></div>
+
+        <!-- Barra de alternância ao vivo dos módulos da aplicação -->
+        <div class="interactive-switcher-bar" role="tablist" aria-label="Interaja com os módulos da interface do Pulsares Research">
+          <span class="interactive-switcher-label">Experimente a Interface:</span>
+          <button type="button" class="interactive-tab-btn active" data-screen="projetos">IDE de Projetos ABNT</button>
+          <button type="button" class="interactive-tab-btn" data-screen="importador">Importador (.docx/.odt/.doc)</button>
+          <button type="button" class="interactive-tab-btn" data-screen="leitor">Leitor PDF &amp; Âncoras</button>
+          <button type="button" class="interactive-tab-btn" data-screen="fichamentos">Fichamentos &amp; KaTeX</button>
+          <button type="button" class="interactive-tab-btn" data-screen="grafo">Grafo D3-Force</button>
+          <button type="button" class="interactive-tab-btn" data-screen="biblioteca">Biblioteca Local</button>
+          <button type="button" class="interactive-tab-btn" data-screen="colecoes">Coleções</button>
+          <button type="button" class="interactive-tab-btn" data-screen="stickers">Stickers &amp; Tarefas</button>
+        </div>
+
+        <div class="app-window">
+          <div class="window-header">
+            <div class="window-dots" aria-hidden="true">
+              <span class="window-dot close"></span>
+              <span class="window-dot minimize"></span>
+              <span class="window-dot maximize"></span>
+            </div>
+            <div class="window-title">
+              <img src="assets/pulsares-icon.png" alt="" />
+              <span id="interactive-window-title">Pulsares Research — IDE de Projetos Acadêmicos (ABNT NBR 14724 / 6022)</span>
+            </div>
+            <span class="window-status-pill" id="interactive-window-badge">Módulo v0.7.1</span>
+          </div>
+          <div class="window-body">
+            <img id="interactive-screen-img" src="assets/screenshots/projetos-ide.svg"
+              alt="Interface interativa do Pulsares Research exibindo a IDE de Projetos Acadêmicos" />
+
+            <div class="mockup-tag tag-left">
+              <span style="color:var(--amber-400)">✦</span>
+              <span>Âncoras Determinísticas &amp; ABNT Automática</span>
+            </div>
+            <div class="mockup-tag tag-right">
+              <span style="color:var(--emerald-400)">●</span>
+              <span>SQLite Local + Cofre Criptográfico AES-256</span>
+            </div>
+          </div>
+          <div class="window-caption-bar">
+            <div class="window-caption-text">
+              <strong id="interactive-caption-title">IDE de Projetos Acadêmicos em 3 Colunas + Folha A4 ABNT</strong>
+              <span id="interactive-caption-desc">Escreva Teses, Dissertações, TCCs e Artigos com árvore de capítulos, prévia A4 real e compilação automática de referências ABNT NBR 6023.</span>
+            </div>
+            <a class="window-caption-link" id="interactive-caption-link" href="guia-usuario.html?cap=06-projetos-academicos-abnt">
+              <span>Ver documentação deste módulo</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO RECURSOS: BENTO GRID -->
+    <section class="section-features" id="recursos">
+      <div class="section-head">
+        <p class="kicker">Rigor científico e fluidez editorial</p>
+        <h2>Do PDF bruto à tese formatada em ABNT.</h2>
+        <p>Cada módulo do Pulsares Research foi desenhado para manter a rastreabilidade acadêmica entre o que você lê, o que você analisa e o que você publica.</p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Card 1: IDE de Projetos Acadêmicos & Importador Estrutural -->
+        <article class="bento-card card-span-7">
+          <div class="bento-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+            </svg>
+          </div>
+          <h3>IDE de Projetos Acadêmicos &amp; Importador (.docx, .odt, .doc)</h3>
+          <p>Elabore Teses, Dissertações, Monografias/TCC, Artigos Científicos e Projetos de Pesquisa em uma IDE de 3 colunas com Folha A4 real (margens 3 cm / 2 cm), Sumário NBR 6027 e compilação automática de referências ao citar. Já tem um manuscrito? O <strong>Importador Estrutural</strong> detecta Headings (H1, H2, H3), Resumo/Abstract e Referências, permitindo vincular bookmarks manualmente.</p>
+          <div class="interactive-preview">
+            <div class="editor-snippet">
+              <div class="snippet-title">
+                <span>Modelos e Importação Assistida</span>
+                <span class="snippet-badge">Novo na v0.7.1</span>
+              </div>
+              <div class="snippet-item">
+                <span class="snippet-check">✓</span>
+                <span>Importação de .docx, .odt e .doc com tela de diagnóstico e vinculador H1/H2/H3</span>
+              </div>
+              <div class="snippet-item">
+                <span class="snippet-check">✓</span>
+                <span>Compilação alfabética automática de Referências ABNT NBR 6023 sem duplicatas</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Leitor Profundo & Âncoras Resilientes -->
+        <article class="bento-card card-span-5">
+          <div class="bento-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z" />
+            </svg>
+          </div>
+          <h3>Leitor de PDF com Âncoras Determinísticas</h3>
+          <p>Selecione qualquer trecho durante a leitura para criar destaques, notas de estudo, citações diretas normalizadas ou paráfrases assistidas. Toda anotação guarda obra, página e contexto exato de recuperação.</p>
+          <div class="interactive-preview">
+            <div class="sync-status-box">
+              <span class="sync-pill">
+                <span class="sync-dot"></span>
+                Vínculo Permanente com a Fonte
+              </span>
+              <span style="font-size: 11px; color: #9eb3ab; font-family: monospace;">Pág. + Coordenadas</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Grafo de Conhecimento D3-Force -->
+        <article class="bento-card card-span-5">
+          <div class="bento-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M17 16l-4-4V8.82C14.16 8.4 15 7.3 15 6c0-1.66-1.34-3-3-3S9 4.34 9 6c0 1.3.84 2.4 2 2.82V12l-4 4H3v5h5v-3.05l4-4.2 4 4.2V21h5v-5h-4z" />
+            </svg>
+          </div>
+          <h3>Grafo de Conhecimento D3-Force</h3>
+          <p>Visualize e construa relações epistemológicas (<em>fundamenta</em>, <em>complementa</em>, <em>contradiz</em>, <em>aprofunda</em>, <em>exemplifica</em>) entre obras, notas, citações, coleções e etiquetas.</p>
+          <div class="interactive-preview">
+            <div class="tag-cluster">
+              <span class="tag-chip active">● Fundamenta</span>
+              <span class="tag-chip">● Complementa</span>
+              <span class="tag-chip">● Contradiz</span>
+              <span class="tag-chip">● Aprofunda</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Fichamentos & Editor Científico -->
+        <article class="bento-card card-span-7">
+          <div class="bento-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z" />
+            </svg>
+          </div>
+          <h3>Fichamentos &amp; Editor Científico (KaTeX, Química &amp; Mermaid)</h3>
+          <p>Fiche obras digitais da biblioteca ou livros físicos avulsos em 4 modalidades metodológicas. O editor científico suporta fórmulas LaTeX via <strong>KaTeX</strong>, equações químicas via <strong>mhchem</strong>, cálculos dinâmicos <strong>Math.js</strong>, blocos de <strong>Figura ABNT</strong> salvos em pastas estruturadas no disco e diagramas vetoriais <strong>Mermaid.js</strong>.</p>
+          <div class="interactive-preview">
+            <div class="sync-status-box">
+              <span style="font-size: 13px; color: #ffffff; font-weight: 600;">Motor Científico Integrado</span>
+              <span style="font-size: 12px; color: var(--amber-400); font-weight: 700;">KaTeX · mhchem · Math.js · Mermaid SVG</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: Soberania Local, Cofre AES-256, Bunny Storage & IA Opcional -->
+        <article class="bento-card card-span-12">
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 24px;">
+            <div style="max-width: 640px;">
+              <div class="bento-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
+                </svg>
+              </div>
+              <h3>100% Local-First por Padrão · IA e Nuvem Estritamente Opcionais</h3>
+              <p>O Pulsares Research funciona integralmente offline, sem necessidade de conta, assinatura ou chave de API. Você escolhe a pasta da sua biblioteca no disco e o banco SQLite local guarda todo o seu conhecimento. Quando desejar assistência de IA (Gemini, Claude ou OpenAI) ou réplica na nuvem, suas chaves ficam cifradas em <strong>AES-256</strong> no cofre local e nenhum texto sai do dispositivo sem o seu consentimento explícito.</p>
+            </div>
+            <div class="interactive-preview" style="align-self: center; margin-top: 0; min-width: 300px; flex: 1; max-width: 440px;">
+              <div class="editor-snippet">
+                <div class="snippet-title">
+                  <span>Arquitetura de Privacidade</span>
+                  <span class="snippet-badge">Zero Telemetria</span>
+                </div>
+                <div class="snippet-item">
+                  <span class="snippet-check">✓</span>
+                  <span>Arquivos PDF/EPUB permanecem na sua pasta local</span>
+                </div>
+                <div class="snippet-item">
+                  <span class="snippet-check">✓</span>
+                  <span>Cofre AES-256 para chaves Gemini, Claude e OpenAI</span>
+                </div>
+                <div class="snippet-item">
+                  <span class="snippet-check">✓</span>
+                  <span>Exportação direta em Word ABNT (.docx), Markdown e HTML A4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;">
+        <a class="cta-secondary" href="recursos.html">
+          <span>Explorar catálogo completo de recursos e especificações</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SEÇÃO ARQUITETURA TÉCNICA -->
+    <section class="section-tech" id="arquitetura">
+      <div class="section-head">
+        <p class="kicker">Engenharia modular local-first</p>
+        <h2>Construído sobre fundamentos sólidos.</h2>
+        <p>Separação limpa entre o núcleo nativo em Go e a interface editorial em React e TypeScript estrito.</p>
+      </div>
+
+      <div class="tech-grid">
+        <article class="tech-item">
+          <div class="tech-number">01</div>
+          <h4>Wails v2 + Go 1.26</h4>
+          <p>Núcleo desktop compilado nativamente com acesso direto ao sistema de arquivos, extração ZIP nativa e baixíssimo uso de memória.</p>
+        </article>
+
+        <article class="tech-item">
+          <div class="tech-number">02</div>
+          <h4>React 19 + TypeScript 5.9</h4>
+          <p>Interface editorial responsiva em tema claro e escuro com tokens semânticos, tipagem estrita e atalhos acessíveis.</p>
+        </article>
+
+        <article class="tech-item">
+          <div class="tech-number">03</div>
+          <h4>SQLite + Migrações Versionadas</h4>
+          <p>Persistência relacional autocontida (`modernc.org/sqlite`) com 15 migrações versionadas para obras, âncoras, grafo, fichamentos e projetos.</p>
+        </article>
+
+        <article class="tech-item">
+          <div class="tech-number">04</div>
+          <h4>Leitor PDF &amp; Âncoras Resilientes</h4>
+          <p>Renderização fluida de documentos PDF com captura determinística de página, coordenadas e contexto para recuperação exata.</p>
+        </article>
+
+        <article class="tech-item">
+          <div class="tech-number">05</div>
+          <h4>Tiptap + KaTeX + mhchem + Mermaid</h4>
+          <p>Editor científico estruturado com fórmulas LaTeX, equações químicas, cálculos Math.js, blocos de figura ABNT e diagramas SVG.</p>
+        </article>
+
+        <article class="tech-item">
+          <div class="tech-number">06</div>
+          <h4>Grafo de Conhecimento D3-Force</h4>
+          <p>Motor interativo de simulação física para mapear relações conceituais entre obras, notas, citações, coleções e etiquetas.</p>
+        </article>
+
+        <article class="tech-item">
+          <div class="tech-number">07</div>
+          <h4>Motor ABNT (NBR 14724 · 6023 · 10520)</h4>
+          <p>Formatação automatizada de referências bibliográficas, citações diretas curtas/longas, folha A4 e exportação para Word (`.docx`).</p>
+        </article>
+
+        <article class="tech-item">
+          <div class="tech-number">08</div>
+          <h4>Importador Estrutural (.docx / .odt / .doc)</h4>
+          <p>Analisador XML/RTF com detecção de Headings, pré-textuais e referências, acompanhado de vinculador interativo de bookmarks.</p>
+        </article>
+
+        <article class="tech-item">
+          <div class="tech-number">09</div>
+          <h4>Cofre Criptográfico AES-256 &amp; IA</h4>
+          <p>Armazenamento cifrado de chaves de API (Gemini, Claude, OpenAI) com consentimento explícito por operação e privacidade por padrão.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SCREENSHOTS TEASER -->
+    <section class="section-preview">
+      <div class="section-head">
+        <p class="kicker">Interface em detalhes</p>
+        <h2>Concebido como um gabinete de leitura e escrita.</h2>
+        <p>Clique em qualquer tela para ampliar ou explore a galeria completa.</p>
+      </div>
+
+      <div class="preview-grid">
+        <div class="preview-thumb">
+          <img src="assets/screenshots/projetos-ide.svg" alt="IDE de Projetos Acadêmicos ABNT" />
+          <div class="preview-thumb-info">
+            <h4>IDE de Projetos Acadêmicos</h4>
+            <p>Árvore de capítulos, folha A4 ABNT e compilação automática de referências.</p>
+          </div>
+        </div>
+
+        <div class="preview-thumb">
+          <img src="assets/screenshots/importador-estrutural.svg" alt="Importador de Documentos .docx, .odt e .doc" />
+          <div class="preview-thumb-info">
+            <h4>Importador Estrutural (.docx, .odt, .doc)</h4>
+            <p>Preview de matchs e vinculador de bookmarks para preencher o modelo.</p>
+          </div>
+        </div>
+
+        <div class="preview-thumb">
+          <img src="assets/screenshots/grafo-conexoes.svg" alt="Grafo de Conhecimento D3-Force" />
+          <div class="preview-thumb-info">
+            <h4>Grafo de Conhecimento D3</h4>
+            <p>Rede de relações semânticas entre obras, citações, notas e coleções.</p>
+          </div>
+        </div>
+      </div>
+
+      <a class="preview-cta-btn" href="screenshots.html">
+        <span>Explorar todas as 8 telas na Galeria</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <!-- SEÇÃO DOWNLOADS -->
+    <section class="download-section" id="downloads">
+      <div class="section-head">
+        <p class="kicker">Comece sua pesquisa hoje</p>
+        <h2>Pronto para assumir o controle do seu acervo?</h2>
+        <p>Baixe o Pulsares Research gratuitamente e experimente um ambiente acadêmico 100% local-first.</p>
+      </div>
+
+      <div class="download-box">
+        <div class="platform-switch" role="tablist" aria-label="Escolha seu sistema operacional">
+          <button class="platform selected" type="button" data-platform="windows" role="tab"
+            aria-selected="true">Windows</button>
+          <button class="platform" type="button" data-platform="macos" role="tab" aria-selected="false">macOS</button>
+          <button class="platform" type="button" data-platform="linux" role="tab" aria-selected="false">Linux</button>
+        </div>
+
+        <div class="download-details">
+          <div class="download-formats" id="windows-formats" role="tablist" aria-label="Formatos Windows">
+            <button class="format-pill active" type="button" data-platform-target="windows" data-format="exe">
+              <span class="pill-spark">✦</span> Executável Nativo <span class="pill-tag">Recomendado</span>
+            </button>
+            <button class="format-pill" type="button" data-platform-target="windows" data-format="portable">
+              Pacote Portátil <span class="pill-tag">.zip</span>
+            </button>
+          </div>
+
+          <div class="download-formats" id="linux-formats" style="display: none;" role="tablist"
+            aria-label="Formatos Linux">
+            <button class="format-pill active" type="button" data-platform-target="linux" data-format="appimage">
+              <span class="pill-spark">✦</span> Linux x64 / AppImage <span class="pill-tag">Recomendado</span>
+            </button>
+            <button class="format-pill" type="button" data-platform-target="linux" data-format="deb">
+              .deb <span class="pill-tag">Debian / Ubuntu</span>
+            </button>
+            <button class="format-pill" type="button" data-platform-target="linux" data-format="targz">
+              .tar.gz <span class="pill-tag">Tarball</span>
+            </button>
+          </div>
+
+          <p class="download-note" id="platform-note">Windows 10 ou 11 (64-bit) · Executável nativo Wails (.exe)</p>
+          <a class="download-action-btn" id="download-link" href="https://github.com/vitorkrewer/pulsares-research-web/releases/latest">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+            </svg>
+            <span id="download-label">Baixar para Windows (x64)</span>
+          </a>
+          <p class="download-meta-text" id="download-meta">Versão v0.7.1 · 64-bit · 100% Local-First</p>
+          <div class="download-alt-links" id="download-alt-links"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL LIGHTBOX PARA IMAGENS -->
+  <div class="screenshot-modal" id="screenshot-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modal-title">Visualização da Interface</h3>
+        <button class="modal-close" id="modal-close" type="button" aria-label="Fechar visualização">✕</button>
+      </div>
+      <div class="modal-body">
+        <img id="modal-img" src="" alt="" />
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RODAPÉ INSTITUCIONAL -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand-col">
+        <a class="brand" href="#top" aria-label="Voltar ao topo">
+          <img src="assets/pulsares-icon.png" alt="" />
+          <span>Pulsares Research</span>
+        </a>
+        <p class="footer-tagline">
+          Ambiente desktop pessoal e local-first para leitura profunda, anotações ancoradas, citações ABNT, fichamentos e projetos acadêmicos.
+        </p>
+        <div class="footer-badge-list">
+          <span class="footer-badge">100% Local-First</span>
+          <span class="footer-badge">Zero Telemetria</span>
+          <span class="footer-badge">Rigor ABNT</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="guia-usuario.html">Guia de Uso</a></li>
+          <li><a href="#arquitetura">Arquitetura Técnica</a></li>
+          <li><a href="screenshots.html">Galeria de Telas</a></li>
+          <li><a href="help.html">Ajuda &amp; FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="release.html">Notas de Release (Changelog)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Tecnologias</h5>
+        <ul>
+          <li><a href="https://wails.io" target="_blank" rel="noreferrer">Wails Framework</a></li>
+          <li><a href="https://go.dev" target="_blank" rel="noreferrer">Go Language</a></li>
+          <li><a href="https://www.sqlite.org" target="_blank" rel="noreferrer">SQLite Local</a></li>
+          <li><a href="https://tiptap.dev" target="_blank" rel="noreferrer">Tiptap Editor</a></li>
+          <li><a href="https://katex.org" target="_blank" rel="noreferrer">KaTeX &amp; mhchem</a></li>
+          <li><a href="https://mermaid.js.org" target="_blank" rel="noreferrer">Mermaid.js &amp; D3.js</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Conectar &amp; Código</h5>
+        <p style="font-size: 13px; line-height: 1.5; margin: 0 0 12px; color: #8fa39b;">Acompanhe as atualizações e releases oficiais no GitHub.</p>
+        <div class="social-icon-links">
+          <a class="social-icon-btn" href="https://github.com/vitorkrewer/pulsares-research-web" target="_blank"
+            rel="noreferrer" aria-label="Repositório no GitHub" title="Repositório GitHub">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </a>
+          <a class="social-icon-btn" href="https://www.linkedin.com/in/vitorkrewer/" target="_blank" rel="noreferrer"
+            aria-label="LinkedIn de Vitor Krewer" title="LinkedIn Vitor Krewer">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.95 0-1.72-.77-1.72-1.72s.77-1.72 1.72-1.72 1.72.77 1.72 1.72-.77 1.72-1.72 1.72m1.39 9.74v-8.37H5.07v8.37h2.78z" />
+            </svg>
+          </a>
+          <a class="social-icon-btn" href="https://github.com/vitorkrewer/pulsares-research-web/releases" target="_blank"
+            rel="noreferrer" aria-label="Todas as Releases" title="Todas as Releases">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-creator">
+        Desenvolvido por <a href="https://www.linkedin.com/in/vitorkrewer/" target="_blank" rel="noreferrer">Vitor Krewer</a>
+      </div>
+      <div>
+        © <span id="year"></span> Pulsares Research · Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" id="scroll-top-btn" type="button" aria-label="Voltar ao topo" title="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z" />
+    </svg>
+  </button>
+
+  <script src="script.js?v=0.7.1"></script>
+</body>
+
+</html>
+

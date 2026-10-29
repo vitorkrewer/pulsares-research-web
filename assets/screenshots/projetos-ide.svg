@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 780" fill="none">
+  <rect width="1280" height="780" rx="14" fill="#EFE9DC"/>
+  <!-- Top IDE Header -->
+  <rect width="1280" height="66" fill="#FAF7F2"/>
+  <line x1="0" y1="66" x2="1280" y2="66" stroke="#D5CBB8"/>
+  <rect x="18" y="17" width="86" height="32" rx="7" fill="#FFFFFF" stroke="#D5CBB8"/>
+  <text x="32" y="37" fill="#162722" font-family="sans-serif" font-size="12" font-weight="600">‹ Projetos</text>
+  <text x="122" y="30" fill="#162722" font-family="Georgia, serif" font-size="16" font-weight="bold">Tecnologias Digitais e Arquiteturas Inteligentes para Pesquisa Científica</text>
+  <text x="122" y="50" fill="#5D645F" font-family="sans-serif" font-size="11.5">Dissertação de Mestrado (ABNT NBR 14724) · 14.820 / 25.000 palavras · 24 referências ABNT</text>
+
+  <!-- Mode Toggle Buttons (Fixed alignment!) -->
+  <rect x="742" y="17" width="234" height="32" rx="7" fill="#EAE3D2" stroke="#D5CBB8"/>
+  <rect x="745" y="20" width="68" height="26" rx="5" fill="#162722"/>
+  <text x="762" y="37" fill="#FFFFFF" font-family="sans-serif" font-size="11.5" font-weight="600">Editor</text>
+  <text x="826" y="37" fill="#2A332E" font-family="sans-serif" font-size="11.5" font-weight="600">Folha A4</text>
+  <text x="896" y="37" fill="#2A332E" font-family="sans-serif" font-size="11.5" font-weight="600">Prévia ABNT</text>
+
+  <rect x="988" y="17" width="46" height="32" rx="7" fill="#FFFFFF" stroke="#D5CBB8"/>
+  <text x="1001" y="37" fill="#162722" font-family="sans-serif" font-size="12" font-weight="700">⬇ ▾</text>
+  <rect x="1044" y="17" width="136" height="32" rx="7" fill="#FFFFFF" stroke="#D5CBB8"/>
+  <text x="1060" y="37" fill="#162722" font-family="sans-serif" font-size="11.5" font-weight="600">Painel de Pesquisa</text>
+  <rect x="1190" y="17" width="72" height="32" rx="7" fill="#C96140"/>
+  <text x="1210" y="37" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="700">Salvo</text>
+
+  <!-- Left Outline Tree Column -->
+  <rect x="0" y="66" width="270" height="714" fill="#FAF7F2"/>
+  <line x1="270" y1="66" x2="270" y2="780" stroke="#D5CBB8"/>
+  <text x="18" y="98" fill="#7C7365" font-family="sans-serif" font-size="10.5" font-weight="700">ELEMENTOS PRÉ-TEXTUAIS</text>
+  <rect x="232" y="82" width="24" height="22" rx="5" fill="#EAE3D2"/>
+  <text x="239" y="97" fill="#162722" font-family="sans-serif" font-size="11" font-weight="700">«</text>
+  <text x="24" y="128" fill="#2A332E" font-family="sans-serif" font-size="12.5">Pré · Capa &amp; Folha de Rosto</text>
+  <text x="24" y="156" fill="#2A332E" font-family="sans-serif" font-size="12.5">Pré · Resumo &amp; Abstract</text>
+
+  <text x="18" y="198" fill="#7C7365" font-family="sans-serif" font-size="10.5" font-weight="700">CAPÍTULOS &amp; SEÇÕES</text>
+  <rect x="198" y="182" width="58" height="22" rx="5" fill="#FBECE7"/>
+  <text x="206" y="197" fill="#C96140" font-family="sans-serif" font-size="10.5" font-weight="700">+ Seção</text>
+
+  <rect x="12" y="212" width="246" height="34" rx="7" fill="#E8F0ED" stroke="#20352F"/>
+  <text x="24" y="233" fill="#162722" font-family="sans-serif" font-size="12" font-weight="700">1  INTRODUÇÃO (1.420p)</text>
+  <text x="24" y="268" fill="#2A332E" font-family="sans-serif" font-size="12">2  FUNDAMENTAÇÃO TEÓRICA</text>
+  <text x="36" y="296" fill="#5D645F" font-family="sans-serif" font-size="11.5">2.1 Arquitetura Local-First</text>
+  <text x="36" y="322" fill="#5D645F" font-family="sans-serif" font-size="11.5">2.2 Rastreabilidade e Âncoras</text>
+  <text x="24" y="352" fill="#2A332E" font-family="sans-serif" font-size="12">3  PROCEDIMENTOS METODOLÓGICOS</text>
+  <text x="24" y="382" fill="#2A332E" font-family="sans-serif" font-size="12">4  RESULTADOS E DISCUSSÃO</text>
+  <text x="24" y="412" fill="#2A332E" font-family="sans-serif" font-size="12">5  CONCLUSÕES</text>
+
+  <text x="18" y="456" fill="#7C7365" font-family="sans-serif" font-size="10.5" font-weight="700">ELEMENTOS PÓS-TEXTUAIS</text>
+  <text x="24" y="484" fill="#C96140" font-family="sans-serif" font-size="12.5" font-weight="700">Pós · Referências ABNT (24)</text>
+
+  <!-- Center A4 / Editor Sheet -->
+  <rect x="298" y="90" width="644" height="666" rx="8" fill="#FFFFFF" stroke="#D5CBB8"/>
+  <rect x="322" y="112" width="596" height="48" rx="6" fill="#FAF7F2" stroke="#EAE3D2"/>
+  <text x="336" y="133" fill="#C96140" font-family="sans-serif" font-size="11" font-weight="700">ORIENTAÇÃO METODOLÓGICA (ABNT NBR 14724):</text>
+  <text x="336" y="150" fill="#5D645F" font-family="sans-serif" font-size="11">Contextualize o problema de pesquisa, delimite os objetivos geral e específicos e apresente a justificativa.</text>
+
+  <text x="342" y="204" fill="#162722" font-family="Times New Roman, Georgia, serif" font-size="18" font-weight="bold">1 INTRODUÇÃO</text>
+  <text x="382" y="244" fill="#1E2421" font-family="Times New Roman, Georgia, serif" font-size="14.5">A crescente complexidade da produção científica contemporânea exige ambientes</text>
+  <text x="342" y="270" fill="#1E2421" font-family="Times New Roman, Georgia, serif" font-size="14.5">computacionais que preservem o vínculo epistemológico entre a fonte primária e a</text>
+  <text x="342" y="296" fill="#1E2421" font-family="Times New Roman, Georgia, serif" font-size="14.5">síntese autoral. Conforme demonstrado por Kleppmann et al. (2019, p. 14), a adoção</text>
+  <text x="342" y="322" fill="#1E2421" font-family="Times New Roman, Georgia, serif" font-size="14.5">de arquiteturas local-first elimina a fragilidade de serviços efêmeros em nuvem.</text>
+
+  <!-- Long Direct Quote ABNT (4cm indent) -->
+  <rect x="462" y="352" width="436" height="96" rx="4" fill="#FAF7F2"/>
+  <line x1="462" y1="352" x2="462" y2="448" stroke="#C96140" stroke-width="3"/>
+  <text x="478" y="376" fill="#1E2421" font-family="Times New Roman, Georgia, serif" font-size="12">No software local-first, a disponibilidade de leitura e escrita nunca depende</text>
+  <text x="478" y="396" fill="#1E2421" font-family="Times New Roman, Georgia, serif" font-size="12">da rede: os dados residem permanentemente no dispositivo do pesquisador,</text>
+  <text x="478" y="416" fill="#1E2421" font-family="Times New Roman, Georgia, serif" font-size="12">garantindo longevidade de décadas (KLEPPMANN et al., 2019, p. 14).</text>
+
+  <!-- Right Research & Auto-Reference Compiler Column -->
+  <rect x="966" y="66" width="314" height="714" fill="#FAF7F2"/>
+  <line x1="966" y1="66" x2="966" y2="780" stroke="#D5CBB8"/>
+  <text x="986" y="98" fill="#162722" font-family="sans-serif" font-size="11.5" font-weight="700">COMPILAÇÃO AUTOMÁTICA ABNT</text>
+  <text x="986" y="118" fill="#5D645F" font-family="sans-serif" font-size="11">Ao inserir uma citação, a obra entra automaticamente nas Referências NBR 6023:</text>
+
+  <rect x="986" y="138" width="274" height="128" rx="8" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <text x="1000" y="160" fill="#20352F" font-family="sans-serif" font-size="11" font-weight="700">KLEPPMANN, Martin et al. (2019)</text>
+  <text x="1000" y="180" fill="#4A524D" font-family="Georgia, serif" font-size="11.5">Local-First Software: You Own Your Data, in Spite of the Cloud.</text>
+  <rect x="1000" y="226" width="246" height="26" rx="5" fill="#162722"/>
+  <text x="1032" y="243" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="600">+ Citar no Texto &amp; Compilar</text>
+
+  <rect x="986" y="282" width="274" height="128" rx="8" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <text x="1000" y="304" fill="#20352F" font-family="sans-serif" font-size="11" font-weight="700">KUHN, Thomas S. (1962)</text>
+  <text x="1000" y="324" fill="#4A524D" font-family="Georgia, serif" font-size="11.5">A Estrutura das Revoluções Científicas. São Paulo: Perspectiva.</text>
+  <rect x="1000" y="370" width="246" height="26" rx="5" fill="#162722"/>
+  <text x="1032" y="387" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="600">+ Citar no Texto &amp; Compilar</text>
+</svg>
+

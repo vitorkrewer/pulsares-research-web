@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Central de Ajuda e Perguntas Frequentes (FAQ) do Pulsares Research." />
+  <link rel="icon" type="image/png" href="assets/pulsares-icon.png" />
+  <title>Ajuda &amp; FAQ — Pulsares Research</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=0.7.1" />
+  <style>
+    .help-hero {
+      position: relative;
+      padding: 100px 20px 60px;
+      text-align: center;
+      border-bottom: 1px solid var(--border-subtle);
+      overflow: hidden;
+    }
+    .help-hero h1 {
+      font-family: 'Space Grotesk', Georgia, serif;
+      font-size: clamp(34px, 4.5vw, 54px);
+      font-weight: 800;
+      color: var(--paper-100);
+      margin: 0 0 14px;
+    }
+    .help-hero p {
+      color: #9eb3ab;
+      font-size: 18px;
+      max-width: 640px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .help-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 24px 110px;
+    }
+    .help-search-box {
+      max-width: 640px;
+      margin: 0 auto 44px;
+      position: relative;
+    }
+    .help-search-box input {
+      width: 100%;
+      background: var(--glass-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 16px 20px 16px 48px;
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+      font-family: inherit;
+    }
+    .help-search-box input:focus {
+      border-color: var(--amber-400);
+      box-shadow: 0 0 0 3px rgba(201, 97, 64, 0.25);
+    }
+    .help-search-box .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      color: #9eb3ab;
+    }
+    .help-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+    }
+    .help-card {
+      background: var(--glass-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 18px;
+      padding: 26px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.22s ease;
+    }
+    .help-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 158, 109, 0.45);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+    }
+    .help-card-badge {
+      display: inline-block;
+      width: fit-content;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--amber-400);
+      background: rgba(201, 97, 64, 0.16);
+      border: 1px solid rgba(255, 158, 109, 0.28);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+    .help-card h3 {
+      font-size: 18.5px;
+      color: var(--paper-100);
+      margin: 0 0 10px;
+      line-height: 1.35;
+    }
+    .help-card p {
+      font-size: 14px;
+      color: #b0c2bb;
+      line-height: 1.6;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pulsares Research">
+      <img src="assets/pulsares-icon.png" alt="Logo Pulsares Research" />
+      <span>Pulsares Research</span>
+    </a>
+
+    <nav class="header-nav" aria-label="Navegação principal">
+      <a href="recursos.html">Recursos</a>
+      <a href="guia-usuario.html">Guia de Uso</a>
+      <a href="index.html#arquitetura">Arquitetura</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a class="active" href="help.html">Ajuda &amp; FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="release.html">Releases</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-download-btn" href="index.html#downloads">
+        <span>Baixar</span>
+        <span id="header-version-badge">v0.7.1</span>
+      </a>
+      <button class="menu-toggle-btn" id="mobile-menu-toggle" type="button" aria-label="Abrir menu de navegação"
+        aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Navegação mobile" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="recursos.html">Recursos</a>
+      <a href="guia-usuario.html">Guia de Uso</a>
+      <a href="index.html#arquitetura">Arquitetura Técnica</a>
+      <a href="screenshots.html">Galeria de Telas</a>
+      <a class="active" href="help.html">Ajuda &amp; FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="release.html">Notas de Release (Changelog)</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a class="btn-drawer-download" href="index.html#downloads">
+        <span>Baixar Pulsares Research</span>
+      </a>
+      <span class="drawer-version-tag">Versão mais recente: v0.7.1</span>
+    </div>
+  </aside>
+
+  <main id="top">
+    <section class="help-hero">
+      <div class="starfield" aria-hidden="true"></div>
+      <p class="kicker">Suporte &amp; Documentação Rápida</p>
+      <h1>Central de Ajuda &amp; FAQ</h1>
+      <p>Tire dúvidas rápidas sobre armazenamento local, importação de manuscritos (.docx/.odt/.doc), normas ABNT, fichamentos e privacidade.</p>
+    </section>
+
+    <section class="help-container">
+      <div class="help-search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="search" id="faq-search" placeholder="Pesquisar dúvida (ex: importar docx, ABNT, SQLite, IA, figuras)..." />
+      </div>
+
+      <div class="help-grid" id="faq-grid">
+        <article class="help-card">
+          <div>
+            <span class="help-card-badge">Projetos &amp; Importador v0.7.1</span>
+            <h3>Como importar um documento .docx, .odt ou .doc para dentro de um Projeto Acadêmico?</h3>
+            <p>No módulo <strong>Projetos</strong>, clique no botão <strong>Importar</strong> (ao lado de Novo Projeto). Escolha o tipo de projeto de destino (Tese, Dissertação, TCC, Artigo ou Projeto de Pesquisa), selecione o tipo de arquivo enviado e envie o documento. O sistema exibirá uma tela de processamento com as 4 etapas e abrirá o <strong>Preview de Matchs e Vinculador de Bookmarks</strong> para revisar capítulos, subseções, resumo e referências antes de preencher o modelo.</p>
+          </div>
+        </article>
+
+        <article class="help-card">
+          <div>
+            <span class="help-card-badge">Bookmarks &amp; Seções</span>
+            <h3>E se algum capítulo ou subcapítulo não for detectado automaticamente na importação?</h3>
+            <p>Na coluna esquerda do Importador Estrutural, você encontra todos os parágrafos do documento com filtros rápidos (<em>Todos</em>, <em>Candidatos a Título</em> e <em>Matchs</em>). Basta clicar em <strong>H1</strong>, <strong>H2</strong> ou <strong>H3</strong> (ou usar o seletor de função estrutural) em qualquer parágrafo para vinculá-lo manualmente como capítulo ou seção em tempo real.</p>
+          </div>
+        </article>
+
+        <article class="help-card">
+          <div>
+            <span class="help-card-badge">Local-First &amp; SQLite</span>
+            <h3>O Pulsares Research funciona sem internet ou sem chave de IA?</h3>
+            <p>Sim, 100%. Toda a catalogação da biblioteca, leitura de PDF, destaques, citações ABNT, grafo D3, coleções, stickers, tarefas, fichamentos, editor científico (KaTeX/Mermaid) e IDE de Projetos Acadêmicos funcionam integralmente offline usando o banco SQLite local no seu computador.</p>
+          </div>
+        </article>
+
+        <article class="help-card">
+          <div>
+            <span class="help-card-badge">Biblioteca &amp; Arquivos</span>
+            <h3>O aplicativo move ou altera meus arquivos PDF originais?</h3>
+            <p>Não. O Pulsares respeita a estrutura do seu disco: por padrão, apenas referencia o caminho do arquivo no banco SQLite. Em <strong>Configurações</strong>, você pode opcionalmente ativar a organização em subpastas por tipo (Artigos, Livros, Teses) dentro da pasta raiz da sua biblioteca.</p>
+          </div>
+        </article>
+
+        <article class="help-card">
+          <div>
+            <span class="help-card-badge">Figuras &amp; Imagens</span>
+            <h3>Onde ficam salvas as figuras inseridas nos Fichamentos e Projetos?</h3>
+            <p>Para manter o banco SQLite rápido e leve, as imagens inseridas (via botão Figura, Ctrl+V ou Drag &amp; Drop) são gravadas fisicamente no disco em pastas organizadas: <code>&lt;Biblioteca&gt;/Fichamentos/&lt;Nome&gt;/</code> e <code>&lt;Biblioteca&gt;/Projetos/&lt;Tipo&gt;/&lt;Nome&gt;/</code>, com botão direto no editor para abrir a pasta no sistema.</p>
+          </div>
+        </article>
+
+        <article class="help-card">
+          <div>
+            <span class="help-card-badge">ABNT NBR 6023 &amp; 10520</span>
+            <h3>Como funciona a compilação automática de referências nos Projetos?</h3>
+            <p>Ao abrir o <strong>Painel de Pesquisa</strong> (coluna direita da IDE de Projetos) e inserir uma citação de uma obra da Biblioteca, de uma Citação salva ou de um Fichamento, o Pulsares adiciona automaticamente a referência completa formatada em ABNT NBR 6023 na seção pós-textual de <strong>Referências</strong>, mantendo a ordem alfabética e evitando duplicatas.</p>
+          </div>
+        </article>
+
+        <article class="help-card">
+          <div>
+            <span class="help-card-badge">Ciências &amp; Engenharia</span>
+            <h3>Como escrever fórmulas matemáticas, reações químicas e diagramas Mermaid?</h3>
+            <p>Na barra científica do editor (presente em Fichamentos e Projetos), clique em <strong>Fórmula</strong> (inline), <strong>Equação</strong> (bloco KaTeX com suporte a <code>\ce{...}</code> do mhchem para química), <strong>Cálculo</strong> (expressões avaliadas por Math.js) ou <strong>Diagrama</strong> (fluxogramas e mapas conceituais em Mermaid.js com templates prontos).</p>
+          </div>
+        </article>
+
+        <article class="help-card">
+          <div>
+            <span class="help-card-badge">Privacidade &amp; Cofre AES-256</span>
+            <h3>Onde ficam guardadas minhas chaves de API da IA e quais dados são enviados?</h3>
+            <p>As chaves (Gemini, Claude ou OpenAI) são criptografadas com <strong>AES-256</strong> no cofre seguro local. Nenhum livro ou nota é enviado em segundo plano: chamadas de IA ocorrem somente quando você clica explicitamente em um comando assistido e com a caixa de consentimento ativada nas Configurações.</p>
+          </div>
+        </article>
+
+        <article class="help-card">
+          <div>
+            <span class="help-card-badge">Exportação</span>
+            <h3>Em quais formatos posso exportar meus Fichamentos e Projetos Acadêmicos?</h3>
+            <p>Você pode exportar a qualquer momento pelo menu suspenso de exportação para <strong>Word ABNT Completo (`.docx`)</strong>, <strong>Manuscrito Markdown (`.md`)</strong> e <strong>Página Científica / Folha A4 para Impressão e PDF (`.html`)</strong>.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand-col">
+        <a class="brand" href="index.html">
+          <img src="assets/pulsares-icon.png" alt="" />
+          <span>Pulsares Research</span>
+        </a>
+        <p class="footer-tagline">Ambiente desktop pessoal e local-first para leitura profunda e pesquisa científica.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="guia-usuario.html">Guia de Uso</a></li>
+          <li><a href="screenshots.html">Galeria de Telas</a></li>
+          <li><a href="help.html">Ajuda &amp; FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="release.html">Releases</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Documentação</h5>
+        <ul>
+          <li><a href="guia-usuario.html?cap=01-introducao-instalacao">Primeiros Passos</a></li>
+          <li><a href="guia-usuario.html?cap=06-projetos-academicos-abnt">IDE de Projetos &amp; Importador</a></li>
+          <li><a href="guia-usuario.html?cap=05-fichamentos-e-editor-cientifico">Fichamentos &amp; KaTeX</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Código</h5>
+        <div class="social-icon-links">
+          <a class="social-icon-btn" href="https://github.com/vitorkrewer/pulsares-research-web" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" /></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-creator">Desenvolvido por <a href="https://www.linkedin.com/in/vitorkrewer/" target="_blank" rel="noreferrer">Vitor Krewer</a></div>
+      <div>© <span id="year"></span> Pulsares Research · Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=0.7.1"></script>
+  <script>
+    const faqSearch = document.getElementById("faq-search");
+    const faqCards = document.querySelectorAll("#faq-grid .help-card");
+    if (faqSearch) {
+      faqSearch.addEventListener("input", (e) => {
+        const q = e.target.value.toLowerCase().trim();
+        faqCards.forEach((card) => {
+          const match = !q || card.textContent.toLowerCase().includes(q);
+          card.style.display = match ? "flex" : "none";
+        });
+      });
+    }
+  </script>
+</body>
+
+</html>
+

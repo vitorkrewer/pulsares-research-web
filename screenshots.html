@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galeria de Screenshots da interface do Pulsares Research." />
+  <link rel="icon" type="image/png" href="assets/pulsares-icon.png" />
+  <title>Galeria de Telas — Pulsares Research</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=0.7.1" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pulsares Research">
+      <img src="assets/pulsares-icon.png" alt="Logo Pulsares Research" />
+      <span>Pulsares Research</span>
+    </a>
+
+    <nav class="header-nav" aria-label="Navegação principal">
+      <a href="recursos.html">Recursos</a>
+      <a href="guia-usuario.html">Guia de Uso</a>
+      <a href="index.html#arquitetura">Arquitetura</a>
+      <a class="active" href="screenshots.html">Screenshots</a>
+      <a href="help.html">Ajuda &amp; FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="release.html">Releases</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-download-btn" href="index.html#downloads">
+        <span>Baixar</span>
+        <span id="header-version-badge">v0.7.1</span>
+      </a>
+      <button class="menu-toggle-btn" id="mobile-menu-toggle" type="button" aria-label="Abrir menu de navegação"
+        aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Navegação mobile" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="recursos.html">Recursos</a>
+      <a href="guia-usuario.html">Guia de Uso</a>
+      <a href="index.html#arquitetura">Arquitetura Técnica</a>
+      <a class="active" href="screenshots.html">Galeria de Telas</a>
+      <a href="help.html">Ajuda &amp; FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="release.html">Notas de Release (Changelog)</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a class="btn-drawer-download" href="index.html#downloads">
+        <span>Baixar Pulsares Research</span>
+      </a>
+      <span class="drawer-version-tag">Versão mais recente: v0.7.1</span>
+    </div>
+  </aside>
+
+  <main id="top">
+    <section class="gallery-hero">
+      <div class="starfield" aria-hidden="true"></div>
+      <p class="kicker">Design Editorial &amp; Densidade Acadêmica</p>
+      <h1>Galeria de <em>Interface</em></h1>
+      <p>Clique em qualquer tela para inspecionar em alta resolução os módulos do Pulsares Research.</p>
+    </section>
+
+    <section class="gallery-section">
+      <div class="gallery-grid">
+        <article class="screenshot-card">
+          <div class="screenshot-image-wrapper">
+            <img src="assets/screenshots/projetos-ide.svg" alt="IDE de Projetos Acadêmicos ABNT" />
+          </div>
+          <div class="screenshot-info">
+            <span class="screenshot-badge">Projetos v0.7.1</span>
+            <h3>IDE de Projetos Acadêmicos ABNT</h3>
+            <p>Ambiente em 3 colunas com árvore de capítulos, prévia de Folha A4 ABNT (NBR 14724/6022) e compilação automática de referências.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <div class="screenshot-image-wrapper">
+            <img src="assets/screenshots/importador-estrutural.svg" alt="Importador de Documentos .docx, .odt e .doc" />
+          </div>
+          <div class="screenshot-info">
+            <span class="screenshot-badge">Importador v0.7.1</span>
+            <h3>Importador Estrutural (.docx, .odt, .doc)</h3>
+            <p>Detecção automática de Headings, elementos pré-textuais e referências, com vinculador manual de Bookmarks H1/H2/H3.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <div class="screenshot-image-wrapper">
+            <img src="assets/screenshots/leitor-pdf.svg" alt="Leitor Profundo de PDF com Âncoras" />
+          </div>
+          <div class="screenshot-info">
+            <span class="screenshot-badge">Leitura &amp; Âncoras</span>
+            <h3>Leitor de PDF com Âncoras Determinísticas</h3>
+            <p>Seleção de trechos para destacar, criar notas ancoradas, gerar citações ABNT NBR 10520 e acionar síntese assistida por IA.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <div class="screenshot-image-wrapper">
+            <img src="assets/screenshots/fichamentos.svg" alt="Módulo de Fichamentos e Editor Científico" />
+          </div>
+          <div class="screenshot-info">
+            <span class="screenshot-badge">Ciências &amp; Engenharia</span>
+            <h3>Fichamentos &amp; Editor Científico (KaTeX + Mermaid)</h3>
+            <p>Equações matemáticas LaTeX, reações químicas mhchem, diagramas vetoriais Mermaid.js e blocos de Figura ABNT em disco.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <div class="screenshot-image-wrapper">
+            <img src="assets/screenshots/grafo-conexoes.svg" alt="Grafo de Conhecimento D3-Force" />
+          </div>
+          <div class="screenshot-info">
+            <span class="screenshot-badge">Conexões v0.3.0</span>
+            <h3>Grafo de Conhecimento D3-Force</h3>
+            <p>Mapa interativo de relações epistemológicas (fundamenta, complementa, contradiz, aprofunda) entre obras, notas, citações e coleções.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <div class="screenshot-image-wrapper">
+            <img src="assets/screenshots/biblioteca.svg" alt="Biblioteca Acadêmica Local" />
+          </div>
+          <div class="screenshot-info">
+            <span class="screenshot-badge">Acervo Local</span>
+            <h3>Biblioteca Acadêmica (Tabela &amp; Cards)</h3>
+            <p>Catálogo bibliográfico SQLite com busca instantânea, filtros combináveis e etiquetas estruturadas em grupo.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <div class="screenshot-image-wrapper">
+            <img src="assets/screenshots/colecoes.svg" alt="Sistema de Coleções Temáticas" />
+          </div>
+          <div class="screenshot-info">
+            <span class="screenshot-badge">Coleções v0.4.0</span>
+            <h3>Coleções Temáticas &amp; Estatísticas</h3>
+            <p>Painel dedicado para cada linha de pesquisa com métricas de obras, notas, citações e adição rápida via Drag &amp; Drop.</p>
+          </div>
+        </article>
+
+        <article class="screenshot-card">
+          <div class="screenshot-image-wrapper">
+            <img src="assets/screenshots/stickers-tarefas.svg" alt="Quadros de Stickers e Tarefas Acadêmicas" />
+          </div>
+          <div class="screenshot-info">
+            <span class="screenshot-badge">Produtividade v0.5.0</span>
+            <h3>Quadros de Stickers &amp; Cronograma de Tarefas</h3>
+            <p>Mural visual de hipóteses de pesquisa e listas de tarefas com subtarefas e prioridades semânticas.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="screenshot-modal" id="screenshot-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modal-title">Visualização da Interface</h3>
+        <button class="modal-close" id="modal-close" type="button" aria-label="Fechar visualização">✕</button>
+      </div>
+      <div class="modal-body">
+        <img id="modal-img" src="" alt="" />
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand-col">
+        <a class="brand" href="index.html">
+          <img src="assets/pulsares-icon.png" alt="" />
+          <span>Pulsares Research</span>
+        </a>
+        <p class="footer-tagline">Ambiente desktop pessoal e local-first para leitura profunda e pesquisa científica.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="guia-usuario.html">Guia de Uso</a></li>
+          <li><a href="screenshots.html">Galeria de Telas</a></li>
+          <li><a href="help.html">Ajuda &amp; FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="release.html">Releases</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Tecnologias</h5>
+        <ul>
+          <li><a href="https://wails.io" target="_blank" rel="noreferrer">Wails + Go</a></li>
+          <li><a href="https://www.sqlite.org" target="_blank" rel="noreferrer">SQLite Local</a></li>
+          <li><a href="https://tiptap.dev" target="_blank" rel="noreferrer">Tiptap + KaTeX</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Código</h5>
+        <div class="social-icon-links">
+          <a class="social-icon-btn" href="https://github.com/vitorkrewer/pulsares-research" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" /></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-creator">Desenvolvido por <a href="https://www.linkedin.com/in/vitorkrewer/" target="_blank" rel="noreferrer">Vitor Krewer</a></div>
+      <div>© <span id="year"></span> Pulsares Research · Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" id="scroll-top-btn" type="button" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z" /></svg>
+  </button>
+
+  <script src="script.js?v=0.7.1"></script>
+</body>
+
+</html>
+

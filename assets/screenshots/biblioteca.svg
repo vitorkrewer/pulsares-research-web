@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 780" fill="none">
+  <rect width="1280" height="780" rx="14" fill="#F7F3EB"/>
+  <!-- Sidebar -->
+  <rect width="230" height="780" fill="#162722"/>
+  <circle cx="34" cy="36" r="14" fill="#C96140"/>
+  <text x="58" y="41" fill="#F7F3EB" font-family="Georgia, serif" font-size="17" font-weight="bold">Pulsares Research</text>
+  <!-- Sidebar Nav -->
+  <rect x="14" y="72" width="202" height="36" rx="8" fill="#C96140"/>
+  <text x="44" y="95" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="600">Biblioteca (48)</text>
+  <text x="44" y="138" fill="#B5C4BE" font-family="sans-serif" font-size="13">Anotações (186)</text>
+  <text x="44" y="176" fill="#B5C4BE" font-family="sans-serif" font-size="13">Conexões · Grafo D3</text>
+  <text x="44" y="214" fill="#B5C4BE" font-family="sans-serif" font-size="13">Citações ABNT (94)</text>
+  <text x="44" y="252" fill="#B5C4BE" font-family="sans-serif" font-size="13">Fichamentos (19)</text>
+  <text x="44" y="290" fill="#B5C4BE" font-family="sans-serif" font-size="13">Projetos Acadêmicos (7)</text>
+  <line x1="18" y1="322" x2="212" y2="322" stroke="#29443C"/>
+  <text x="24" y="348" fill="#7D968E" font-family="sans-serif" font-size="10" font-weight="700" letter-spacing="1.2">COLEÇÕES DE PESQUISA</text>
+  <circle cx="30" cy="374" r="5" fill="#C96140"/>
+  <text x="44" y="378" fill="#E2ECE8" font-family="sans-serif" font-size="12.5">Tese · Arquiteturas IA (14)</text>
+  <circle cx="30" cy="404" r="5" fill="#3B82F6"/>
+  <text x="44" y="408" fill="#E2ECE8" font-family="sans-serif" font-size="12.5">Epistemologia Científica (9)</text>
+  <circle cx="30" cy="434" r="5" fill="#10B981"/>
+  <text x="44" y="438" fill="#E2ECE8" font-family="sans-serif" font-size="12.5">Metodologia ABNT (11)</text>
+  <!-- Top Header -->
+  <rect x="230" y="0" width="1050" height="76" fill="#EFE9DC"/>
+  <line x1="230" y1="76" x2="1280" y2="76" stroke="#DDD4C3"/>
+  <text x="262" y="34" fill="#7C7365" font-family="sans-serif" font-size="10.5" font-weight="700" letter-spacing="1">ACERVO CIENTÍFICO LOCAL-FIRST</text>
+  <text x="262" y="58" fill="#1E2421" font-family="Georgia, serif" font-size="23" font-weight="bold">Biblioteca Acadêmica</text>
+  <rect x="640" y="22" width="320" height="34" rx="8" fill="#FAF7F2" stroke="#D5CBB8"/>
+  <text x="660" y="44" fill="#8C8272" font-family="sans-serif" font-size="12.5">Buscar por título, autor, DOI, ISBN ou tag...</text>
+  <rect x="976" y="22" width="132" height="34" rx="8" fill="#FAF7F2" stroke="#D5CBB8"/>
+  <text x="996" y="44" fill="#1E2421" font-family="sans-serif" font-size="12.5" font-weight="600">Gerenciar Tags</text>
+  <rect x="1120" y="22" width="134" height="34" rx="8" fill="#C96140"/>
+  <text x="1142" y="44" fill="#FFFFFF" font-family="sans-serif" font-size="12.5" font-weight="700">+ Importar Obra</text>
+  <!-- Filter Chips -->
+  <rect x="262" y="96" width="84" height="28" rx="14" fill="#162722"/>
+  <text x="284" y="114" fill="#FFFFFF" font-family="sans-serif" font-size="11.5" font-weight="600">Todas (48)</text>
+  <rect x="356" y="96" width="110" height="28" rx="14" fill="#EAE3D2" stroke="#D5CBB8"/>
+  <text x="374" y="114" fill="#2A332E" font-family="sans-serif" font-size="11.5" font-weight="600">Artigos (24)</text>
+  <rect x="476" y="96" width="96" height="28" rx="14" fill="#EAE3D2" stroke="#D5CBB8"/>
+  <text x="494" y="114" fill="#2A332E" font-family="sans-serif" font-size="11.5" font-weight="600">Livros (12)</text>
+  <rect x="582" y="96" width="142" height="28" rx="14" fill="#EAE3D2" stroke="#D5CBB8"/>
+  <text x="600" y="114" fill="#2A332E" font-family="sans-serif" font-size="11.5" font-weight="600">Teses &amp; Dissertações</text>
+  <!-- Works Grid Cards -->
+  <!-- Card 1 -->
+  <rect x="262" y="144" width="482" height="184" rx="12" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <rect x="262" y="144" width="6" height="184" rx="3" fill="#C96140"/>
+  <rect x="284" y="162" width="112" height="22" rx="5" fill="#FBECE7"/>
+  <text x="294" y="177" fill="#C96140" font-family="sans-serif" font-size="10.5" font-weight="700">ARTIGO CIENTÍFICO · PDF</text>
+  <text x="670" y="177" fill="#6D716A" font-family="sans-serif" font-size="11" font-weight="600">DOI: 10.1038/s41586</text>
+  <text x="284" y="205" fill="#162722" font-family="Georgia, serif" font-size="16.5" font-weight="bold">Arquiteturas Neurais e Sistemas Local-First</text>
+  <text x="284" y="226" fill="#5D645F" font-family="sans-serif" font-size="12.5">KREWER, Vitor; SANTOS, Marina · Nature Machine Intelligence, 2026</text>
+  <rect x="284" y="244" width="98" height="22" rx="11" fill="#EEF5F2" stroke="#C5D8D0"/>
+  <text x="296" y="259" fill="#20352F" font-family="sans-serif" font-size="11" font-weight="600">#ia:arquitetura</text>
+  <rect x="390" y="244" width="96" height="22" rx="11" fill="#FEF3C7" stroke="#FCD34D"/>
+  <text x="402" y="259" fill="#92400E" font-family="sans-serif" font-size="11" font-weight="600">#status:lendo</text>
+  <line x1="284" y1="282" x2="724" y2="282" stroke="#EFE9DC"/>
+  <text x="284" y="306" fill="#5D645F" font-family="sans-serif" font-size="12">18 anotações · 7 citações ABNT · Página 14/32</text>
+  <rect x="614" y="290" width="110" height="26" rx="6" fill="#162722"/>
+  <text x="634" y="307" fill="#FFFFFF" font-family="sans-serif" font-size="11.5" font-weight="600">Abrir Leitor →</text>
+
+  <!-- Card 2 -->
+  <rect x="764" y="144" width="482" height="184" rx="12" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <rect x="764" y="144" width="6" height="184" rx="3" fill="#20352F"/>
+  <rect x="786" y="162" width="132" height="22" rx="5" fill="#E8F0ED"/>
+  <text x="796" y="177" fill="#20352F" font-family="sans-serif" font-size="10.5" font-weight="700">TESE DE DOUTORADO · PDF</text>
+  <text x="1164" y="177" fill="#6D716A" font-family="sans-serif" font-size="11" font-weight="600">ABNT NBR 14724</text>
+  <text x="786" y="205" fill="#162722" font-family="Georgia, serif" font-size="16.5" font-weight="bold">Epistemologia das Redes de Conhecimento</text>
+  <text x="786" y="226" fill="#5D645F" font-family="sans-serif" font-size="12.5">ALMEIDA, Henrique · Universidade de São Paulo (USP), 2025</text>
+  <rect x="786" y="244" width="106" height="22" rx="11" fill="#EEF5F2" stroke="#C5D8D0"/>
+  <text x="798" y="259" fill="#20352F" font-family="sans-serif" font-size="11" font-weight="600">#tema:grafos</text>
+  <rect x="900" y="244" width="112" height="22" rx="11" fill="#DCFCE7" stroke="#86EFAC"/>
+  <text x="912" y="259" fill="#166534" font-family="sans-serif" font-size="11" font-weight="600">#status:fichado</text>
+  <line x1="786" y1="282" x2="1226" y2="282" stroke="#EFE9DC"/>
+  <text x="786" y="306" fill="#5D645F" font-family="sans-serif" font-size="12">31 anotações · 14 citações ABNT · 248 páginas</text>
+  <rect x="1116" y="290" width="110" height="26" rx="6" fill="#162722"/>
+  <text x="1136" y="307" fill="#FFFFFF" font-family="sans-serif" font-size="11.5" font-weight="600">Abrir Leitor →</text>
+
+  <!-- Table Section Preview below -->
+  <rect x="262" y="348" width="984" height="398" rx="12" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <rect x="262" y="348" width="984" height="42" rx="12" fill="#EFE9DC"/>
+  <text x="284" y="374" fill="#162722" font-family="sans-serif" font-size="11.5" font-weight="700">OBRA &amp; METADADOS VERIFICADOS</text>
+  <text x="690" y="374" fill="#162722" font-family="sans-serif" font-size="11.5" font-weight="700">TIPO / NORMA</text>
+  <text x="845" y="374" fill="#162722" font-family="sans-serif" font-size="11.5" font-weight="700">ETIQUETAS</text>
+  <text x="1030" y="374" fill="#162722" font-family="sans-serif" font-size="11.5" font-weight="700">ÂNCORAS &amp; NOTAS</text>
+  <text x="1175" y="374" fill="#162722" font-family="sans-serif" font-size="11.5" font-weight="700">LEITURA</text>
+
+  <!-- Row 1 -->
+  <text x="284" y="420" fill="#162722" font-family="Georgia, serif" font-size="14" font-weight="bold">A Estrutura das Revoluções Científicas</text>
+  <text x="284" y="438" fill="#6D716A" font-family="sans-serif" font-size="11.5">KUHN, Thomas S. · Editora Perspectiva · ISBN 978-8527301114</text>
+  <rect x="690" y="410" width="92" height="22" rx="5" fill="#E8F0ED"/>
+  <text x="702" y="425" fill="#20352F" font-family="sans-serif" font-size="11" font-weight="600">Livro · PDF</text>
+  <rect x="845" y="410" width="116" height="22" rx="11" fill="#F3E8FF"/>
+  <text x="857" y="425" fill="#6B21A8" font-family="sans-serif" font-size="11" font-weight="600">#base:filosofia</text>
+  <text x="1030" y="426" fill="#2A332E" font-family="sans-serif" font-size="12" font-weight="600">42 destaques · 19 citações</text>
+  <text x="1175" y="426" fill="#15803D" font-family="sans-serif" font-size="12" font-weight="700">Concluído</text>
+  <line x1="278" y1="456" x2="1230" y2="456" stroke="#EFE9DC"/>
+
+  <!-- Row 2 -->
+  <text x="284" y="490" fill="#162722" font-family="Georgia, serif" font-size="14" font-weight="bold">Local-First Software: You Own Your Data, in Spite of the Cloud</text>
+  <text x="284" y="508" fill="#6D716A" font-family="sans-serif" font-size="11.5">KLEPPMANN, Martin et al. · Ink &amp; Switch / ACM Onward!, 2019</text>
+  <rect x="690" y="480" width="98" height="22" rx="5" fill="#FBECE7"/>
+  <text x="702" y="495" fill="#C96140" font-family="sans-serif" font-size="11" font-weight="600">Artigo · PDF</text>
+  <rect x="845" y="480" width="128" height="22" rx="11" fill="#DBEAFE"/>
+  <text x="857" y="495" fill="#1D4ED8" font-family="sans-serif" font-size="11" font-weight="600">#eng:local-first</text>
+  <text x="1030" y="496" fill="#2A332E" font-family="sans-serif" font-size="12" font-weight="600">27 destaques · 12 citações</text>
+  <text x="1175" y="496" fill="#C96140" font-family="sans-serif" font-size="12" font-weight="700">Em estudo</text>
+  <line x1="278" y1="526" x2="1230" y2="526" stroke="#EFE9DC"/>
+
+  <!-- Row 3 -->
+  <text x="284" y="560" fill="#162722" font-family="Georgia, serif" font-size="14" font-weight="bold">Modelagem Bioquímica e Termodinâmica de Processos Celulares</text>
+  <text x="284" y="578" fill="#6D716A" font-family="sans-serif" font-size="11.5">LEHNINGER, Albert; NELSON, David L. · Artmed · Edição 8</text>
+  <rect x="690" y="550" width="92" height="22" rx="5" fill="#E8F0ED"/>
+  <text x="702" y="565" fill="#20352F" font-family="sans-serif" font-size="11" font-weight="600">Livro · PDF</text>
+  <rect x="845" y="550" width="122" height="22" rx="11" fill="#DCFCE7"/>
+  <text x="857" y="565" fill="#15803D" font-family="sans-serif" font-size="11" font-weight="600">#bio:metabolismo</text>
+  <text x="1030" y="566" fill="#2A332E" font-family="sans-serif" font-size="12" font-weight="600">35 destaques · 11 equações</text>
+  <text x="1175" y="566" fill="#C96140" font-family="sans-serif" font-size="12" font-weight="700">Pág. 112</text>
+</svg>
+

@@ -1,0 +1,79 @@
+{
+  "title": "Guia do Usuário — Pulsares Research",
+  "version": "0.7.1",
+  "chapters": [
+    {
+      "id": "01-introducao-instalacao",
+      "number": "01",
+      "title": "Introdução e Instalação",
+      "category": "Primeiros Passos",
+      "file": "guia/01-introducao-instalacao.md",
+      "summary": "Filosofia local-first, requisitos de sistema, instalação no Windows/Linux/macOS e configuração da pasta da biblioteca."
+    },
+    {
+      "id": "02-biblioteca-e-leitor-pdf",
+      "number": "02",
+      "title": "Biblioteca e Leitor PDF Multi-Abas",
+      "category": "Acervo & Leitura",
+      "file": "guia/02-biblioteca-e-leitor-pdf.md",
+      "summary": "Importação não-destrutiva de PDFs e EPUBs, enriquecimento por ISBN/DOI/ISSN e leitura com abas persistentes."
+    },
+    {
+      "id": "03-anotacoes-e-citacoes-abnt",
+      "number": "03",
+      "title": "Anotações Resilientes e Citações ABNT",
+      "category": "Acervo & Leitura",
+      "file": "guia/03-anotacoes-e-citacoes-abnt.md",
+      "summary": "Destaques com âncora de página/coordenadas, notas vinculadas e geração automática de referências NBR 6023 e NBR 10520."
+    },
+    {
+      "id": "04-grafo-conexoes-e-colecoes",
+      "number": "04",
+      "title": "Grafo de Conexões e Coleções Temáticas",
+      "category": "Síntese & Organização",
+      "file": "guia/04-grafo-conexoes-e-colecoes.md",
+      "summary": "Visualização de relações semânticas em D3.js (suporta, contradiz, cita) e curadoria de coleções de pesquisa."
+    },
+    {
+      "id": "05-fichamentos-e-editor-cientifico",
+      "number": "05",
+      "title": "Fichamentos e Editor Científico (KaTeX & Mermaid)",
+      "category": "Síntese & Organização",
+      "file": "guia/05-fichamentos-e-editor-cientifico.md",
+      "summary": "Fichas de transcrição, resumo, críticas e conceituais com equações LaTeX, blocos de cálculo e diagramas Mermaid."
+    },
+    {
+      "id": "06-projetos-academicos-abnt",
+      "number": "06",
+      "title": "Projetos Acadêmicos ABNT e Importador Estrutural",
+      "category": "Escrita Científica",
+      "file": "guia/06-projetos-academicos-abnt.md",
+      "summary": "IDE em 3 colunas, Folha A4 ABNT, Estúdio de Figuras e Importador Estrutural de arquivos .docx, .odt e .doc com vinculador de Bookmarks."
+    },
+    {
+      "id": "07-stickers-e-tarefas",
+      "number": "07",
+      "title": "Stickers Rápidos e Tarefas Acadêmicas",
+      "category": "Produtividade",
+      "file": "guia/07-stickers-e-tarefas.md",
+      "summary": "Captura rápida de insights coloridos e planejamento de prazos, subtarefas e leituras pendentes."
+    },
+    {
+      "id": "08-privacidade-cofre-e-ia",
+      "number": "08",
+      "title": "Privacidade, Cofre do Sistema, Bunny Sync e IA",
+      "category": "Arquitetura & Segurança",
+      "file": "guia/08-privacidade-cofre-e-ia.md",
+      "summary": "Funcionamento 100% offline, credenciais no cofre nativo do SO, réplica criptografada opcional e uso ético de IA."
+    },
+    {
+      "id": "09-atalhos-teclado",
+      "number": "09",
+      "title": "Atalhos de Teclado e Paleta de Comando",
+      "category": "Referência Rápida",
+      "file": "guia/09-atalhos-teclado.md",
+      "summary": "Mapa completo de atalhos globais, navegação no leitor PDF e comandos rápidos do editor científico."
+    }
+  ]
+}
+

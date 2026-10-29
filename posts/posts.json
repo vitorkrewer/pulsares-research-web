@@ -1,0 +1,75 @@
+[
+  {
+    "slug": "v0-7-1-importador-estrutural-e-ide",
+    "title": "Pulsares v0.7.1: Importador Estrutural (.docx, .odt, .doc), Vinculador de Bookmarks e Fluidez na IDE",
+    "date": "2026-10-29",
+    "displayDate": "29 de Outubro de 2026",
+    "version": "v0.7.1",
+    "category": "Engenharia & Produto",
+    "readingTime": "6 min de leitura",
+    "excerpt": "Como construímos um motor local-first capaz de ler manuscritos .docx, .odt e .doc, detectar capítulos ABNT, oferecer vinculação interativa de bookmarks não detectados e preencher templates científicos sem travamentos.",
+    "file": "posts/v0-7-1-importador-estrutural-e-ide.md",
+    "featured": true
+  },
+  {
+    "slug": "v0-7-0-projetos-academicos-abnt-e-figuras",
+    "title": "Pulsares v0.7.0: IDE de Projetos Acadêmicos em 3 Colunas, Folha A4 ABNT e Estúdio de Figuras",
+    "date": "2026-10-28",
+    "displayDate": "28 de Outubro de 2026",
+    "version": "v0.7.0",
+    "category": "Escrita Científica",
+    "readingTime": "5 min de leitura",
+    "excerpt": "Apresentamos a IDE de redação científica com templates normativos ABNT (NBR 6022 e NBR 14724), simulação de folha A4 paginada, citação em 1 clique e estúdio de tratamento de figuras.",
+    "file": "posts/v0-7-0-projetos-academicos-abnt-e-figuras.md",
+    "featured": false
+  },
+  {
+    "slug": "v0-6-0-fichamentos-katex-mermaid",
+    "title": "Pulsares v0.6.0: Fichamentos Acadêmicos, Equações LaTeX (KaTeX) e Diagramas Mermaid",
+    "date": "2026-10-28",
+    "displayDate": "28 de Outubro de 2026",
+    "version": "v0.6.0",
+    "category": "Síntese Científica",
+    "readingTime": "4 min de leitura",
+    "excerpt": "Um novo editor científico Tiptap com suporte nativo a fórmulas matemáticas KaTeX, blocos de cálculo executáveis, diagramas Mermaid e 4 modelos de fichamento vinculados ao acervo.",
+    "file": "posts/v0-6-0-fichamentos-katex-mermaid.md",
+    "featured": false
+  },
+  {
+    "slug": "v0-5-0-stickers-e-tarefas-academicas",
+    "title": "Pulsares v0.5.0: Stickers Rápidos e Gestão de Tarefas Conectada à Biblioteca",
+    "date": "2026-10-28",
+    "displayDate": "28 de Outubro de 2026",
+    "version": "v0.5.0",
+    "category": "Produtividade",
+    "readingTime": "3 min de leitura",
+    "excerpt": "Capture insights efêmeros em notas adesivas editoriais e planeje leituras, qualificações e prazos de submissão diretamente vinculados às obras do seu acervo.",
+    "file": "posts/v0-5-0-stickers-e-tarefas-academicas.md",
+    "featured": false
+  },
+  {
+    "slug": "v0-4-0-colecoes-e-grafo-d3",
+    "title": "Pulsares v0.4.0: Grafo de Conhecimento em D3.js e Coleções Temáticas",
+    "date": "2026-10-28",
+    "displayDate": "28 de Outubro de 2026",
+    "version": "v0.4.0",
+    "category": "Arquitetura de Conhecimento",
+    "readingTime": "4 min de leitura",
+    "excerpt": "Mapeie relações de suporte, contradição e derivação entre artigos e notas em uma rede visual interativa, organizando o acervo em coleções temáticas.",
+    "file": "posts/v0-4-0-colecoes-e-grafo-d3.md",
+    "featured": false
+  },
+  {
+    "slug": "v0-1-0-manifesto-local-first-pulsares",
+    "title": "Por que construímos o Pulsares Research: Manifesto por uma Ciência Local-First",
+    "date": "2026-10-27",
+    "displayDate": "27 de Outubro de 2026",
+    "version": "v0.1.0",
+    "category": "Manifesto & Arquitetura",
+    "readingTime": "5 min de leitura",
+    "excerpt": "Seus PDFs, destaques, fichamentos e capítulos de tese pertencem a você. Conheça as decisões arquiteturais por trás da combinação Wails, Go, SQLite e React.",
+    "file": "posts/v0-1-0-manifesto-local-first-pulsares.md",
+    "featured": false
+  }
+]
+

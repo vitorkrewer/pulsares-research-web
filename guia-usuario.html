@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Manual completo e interativo do Pulsares Research: biblioteca local-first, leitura de PDF, citações ABNT, fichamentos científicos, IDE de Projetos Acadêmicos e Importador .docx/.odt/.doc." />
+  <link rel="icon" type="image/png" href="assets/pulsares-icon.png" />
+  <title>Guia de Uso — Pulsares Research</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=0.7.1" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+  <!-- HEADER FIXO -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pulsares Research">
+      <img src="assets/pulsares-icon.png" alt="Logo Pulsares Research" />
+      <span>Pulsares Research</span>
+    </a>
+
+    <nav class="header-nav" aria-label="Navegação principal">
+      <a href="recursos.html">Recursos</a>
+      <a class="active" href="guia-usuario.html">Guia de Uso</a>
+      <a href="index.html#arquitetura">Arquitetura</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="help.html">Ajuda &amp; FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="release.html">Releases</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-download-btn" href="index.html#downloads">
+        <span>Baixar</span>
+        <span id="header-version-badge">v0.7.1</span>
+      </a>
+      <button class="menu-toggle-btn" id="mobile-menu-toggle" type="button" aria-label="Abrir menu de navegação"
+        aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- DRAWER MOBILE -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Navegação mobile" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="recursos.html">Recursos</a>
+      <a class="active" href="guia-usuario.html">Guia de Uso</a>
+      <a href="index.html#arquitetura">Arquitetura Técnica</a>
+      <a href="screenshots.html">Galeria de Telas</a>
+      <a href="help.html">Ajuda &amp; FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="release.html">Notas de Release (Changelog)</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a class="btn-drawer-download" href="index.html#downloads">
+        <span>Baixar Pulsares Research</span>
+      </a>
+      <span class="drawer-version-tag">Versão mais recente: v0.7.1</span>
+    </div>
+  </aside>
+
+  <!-- BARRA MOBILE PARA ABRIR ÁRVORE DE CAPÍTULOS -->
+  <div class="docs-mobile-bar">
+    <button type="button" class="docs-mobile-trigger" id="docs-sidebar-toggle">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <span>Capítulos do Guia</span>
+    </button>
+    <span class="docs-badge">Manual v0.7.1</span>
+  </div>
+
+  <!-- LAYOUT DE 3 COLUNAS ESTILO GITBOOK -->
+  <main class="docs-layout" id="top">
+    <!-- Left Sidebar: Chapter Tree -->
+    <aside class="docs-sidebar" id="docs-sidebar" aria-label="Capítulos do Guia">
+      <div class="docs-sidebar-header">
+        <span class="docs-badge">Manual Oficial · v0.7.1</span>
+        <div class="docs-search-wrap">
+          <svg class="docs-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="search" id="guide-search" class="docs-search-input" placeholder="Filtrar capítulos..."
+            aria-label="Filtrar capítulos do guia" />
+        </div>
+      </div>
+      <nav id="guide-chapter-list" class="docs-nav-list">
+        <!-- Populated by script -->
+      </nav>
+    </aside>
+
+    <!-- Center Content: Markdown Renderer -->
+    <article class="docs-content-wrap">
+      <div class="docs-breadcrumbs">
+        <a href="index.html">Início</a>
+        <span>/</span>
+        <a href="guia-usuario.html">Guia de Uso</a>
+        <span>/</span>
+        <span id="guide-current-breadcrumb">Carregando...</span>
+      </div>
+
+      <div id="guide-article" class="markdown-body">
+        <p>Carregando capítulo do Guia do Usuário...</p>
+      </div>
+
+      <nav id="guide-pagination" class="docs-pagination" aria-label="Navegação entre capítulos">
+        <!-- Prev / Next buttons -->
+      </nav>
+    </article>
+
+    <!-- Right Sidebar: On This Page TOC -->
+    <aside class="docs-toc" aria-label="Índice desta página">
+      <div class="docs-toc-inner">
+        <h4 class="docs-toc-title">Nesta Página</h4>
+        <ul id="guide-toc-list" class="docs-toc-list"></ul>
+      </div>
+    </aside>
+  </main>
+
+  <!-- RODAPÉ INSTITUCIONAL -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand-col">
+        <a class="brand" href="index.html" aria-label="Pulsares Research">
+          <img src="assets/pulsares-icon.png" alt="" />
+          <span>Pulsares Research</span>
+        </a>
+        <p class="footer-tagline">
+          Ambiente desktop pessoal e local-first para leitura profunda, anotações ancoradas, citações ABNT, fichamentos e projetos acadêmicos.
+        </p>
+        <div class="footer-badge-list">
+          <span class="footer-badge">100% Local-First</span>
+          <span class="footer-badge">Zero Telemetria</span>
+          <span class="footer-badge">Rigor ABNT</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="guia-usuario.html">Guia de Uso</a></li>
+          <li><a href="index.html#arquitetura">Arquitetura Técnica</a></li>
+          <li><a href="screenshots.html">Galeria de Telas</a></li>
+          <li><a href="help.html">Ajuda &amp; FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="release.html">Notas de Release (Changelog)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Capítulos em Destaque</h5>
+        <ul>
+          <li><a href="guia-usuario.html?cap=01-introducao-instalacao">01. Introdução e Instalação</a></li>
+          <li><a href="guia-usuario.html?cap=03-anotacoes-e-citacoes-abnt">03. Anotações &amp; Citações ABNT</a></li>
+          <li><a href="guia-usuario.html?cap=05-fichamentos-e-editor-cientifico">05. Fichamentos &amp; KaTeX</a></li>
+          <li><a href="guia-usuario.html?cap=06-projetos-academicos-abnt">06. IDE ABNT &amp; Importador</a></li>
+          <li><a href="guia-usuario.html?cap=09-atalhos-teclado">09. Atalhos de Teclado</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Conectar &amp; Código</h5>
+        <p style="font-size: 13px; line-height: 1.5; margin: 0 0 12px; color: #8fa39b;">Acompanhe as atualizações e releases oficiais no GitHub.</p>
+        <div class="social-icon-links">
+          <a class="social-icon-btn" href="https://github.com/vitorkrewer/pulsares-research-web" target="_blank"
+            rel="noreferrer" aria-label="Repositório no GitHub" title="Repositório GitHub">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-creator">
+        Desenvolvido por <a href="https://www.linkedin.com/in/vitorkrewer/" target="_blank" rel="noreferrer">Vitor Krewer</a>
+      </div>
+      <div>
+        © <span id="year"></span> Pulsares Research · Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" id="scroll-top-btn" type="button" aria-label="Voltar ao topo" title="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z" />
+    </svg>
+  </button>
+
+  <script src="script.js?v=0.7.1"></script>
+  <script>
+    (function () {
+      const chapterListEl = document.getElementById('guide-chapter-list');
+      const articleEl = document.getElementById('guide-article');
+      const tocListEl = document.getElementById('guide-toc-list');
+      const paginationEl = document.getElementById('guide-pagination');
+      const searchInput = document.getElementById('guide-search');
+      const breadcrumbEl = document.getElementById('guide-current-breadcrumb');
+      const sidebarEl = document.getElementById('docs-sidebar');
+      const sidebarToggleBtn = document.getElementById('docs-sidebar-toggle');
+
+      let chapters = [];
+      let currentChapterId = null;
+
+      if (sidebarToggleBtn && sidebarEl) {
+        sidebarToggleBtn.addEventListener('click', function () {
+          sidebarEl.classList.toggle('active');
+        });
+      }
+
+      function transformAlerts(html) {
+        return html.replace(/<blockquote>\s*<p>\[!(NOTE|TIP|IMPORTANT|WARNING)\]\s*([\s\S]*?)<\/p>\s*<\/blockquote>/gi,
+          function (_, type, content) {
+            const lower = type.toLowerCase();
+            const labels = {
+              note: 'Nota Técnica',
+              tip: 'Dica Metodológica',
+              important: 'Importante',
+              warning: 'Atenção'
+            };
+            return '<div class="callout callout-' + lower + '"><strong>' + (labels[lower] || type) + ':</strong> ' + content + '</div>';
+          });
+      }
+
+      function renderSidebar(filterText) {
+        const q = (filterText || '').trim().toLowerCase();
+        const grouped = {};
+        chapters.forEach(function (ch) {
+          if (q && !ch.title.toLowerCase().includes(q) && !ch.summary.toLowerCase().includes(q)) {
+            return;
+          }
+          if (!grouped[ch.category]) grouped[ch.category] = [];
+          grouped[ch.category].push(ch);
+        });
+
+        let html = '';
+        Object.keys(grouped).forEach(function (category) {
+          html += '<div class="docs-nav-group">';
+          html += '<div class="docs-nav-category">' + category + '</div>';
+          grouped[category].forEach(function (ch) {
+            const activeClass = ch.id === currentChapterId ? ' active' : '';
+            html += '<a href="?cap=' + ch.id + '" data-cap="' + ch.id + '" class="docs-nav-item' + activeClass + '">';
+            html += '<span class="docs-nav-num">' + ch.number + '</span>';
+            html += '<span class="docs-nav-text">' + ch.title + '</span>';
+            html += '</a>';
+          });
+          html += '</div>';
+        });
+
+        chapterListEl.innerHTML = html || '<p class="docs-empty">Nenhum capítulo encontrado.</p>';
+
+        chapterListEl.querySelectorAll('[data-cap]').forEach(function (link) {
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const capId = link.getAttribute('data-cap');
+            history.pushState({ cap: capId }, '', '?cap=' + capId);
+            if (sidebarEl) sidebarEl.classList.remove('active');
+            loadChapter(capId);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+        });
+      }
+
+      function buildTOC() {
+        const headings = articleEl.querySelectorAll('h2, h3');
+        let html = '';
+        headings.forEach(function (h, idx) {
+          const id = 'sec-' + idx;
+          h.id = id;
+          const levelClass = h.tagName === 'H3' ? ' toc-sub' : '';
+          html += '<li class="toc-item' + levelClass + '"><a href="#' + id + '">' + h.textContent + '</a></li>';
+        });
+        tocListEl.innerHTML = html || '<li class="toc-item"><a href="#top">Início do capítulo</a></li>';
+      }
+
+      function renderPagination(index) {
+        const prev = index > 0 ? chapters[index - 1] : null;
+        const next = index < chapters.length - 1 ? chapters[index + 1] : null;
+        let html = '';
+
+        if (prev) {
+          html += '<a href="?cap=' + prev.id + '" data-nav="' + prev.id + '" class="docs-page-btn prev">';
+          html += '<span class="docs-page-dir">&larr; Capítulo Anterior</span>';
+          html += '<strong class="docs-page-title">' + prev.number + '. ' + prev.title + '</strong>';
+          html += '</a>';
+        } else {
+          html += '<div></div>';
+        }
+
+        if (next) {
+          html += '<a href="?cap=' + next.id + '" data-nav="' + next.id + '" class="docs-page-btn next">';
+          html += '<span class="docs-page-dir">Próximo Capítulo &rarr;</span>';
+          html += '<strong class="docs-page-title">' + next.number + '. ' + next.title + '</strong>';
+          html += '</a>';
+        }
+
+        paginationEl.innerHTML = html;
+        paginationEl.querySelectorAll('[data-nav]').forEach(function (btn) {
+          btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            const capId = btn.getAttribute('data-nav');
+            history.pushState({ cap: capId }, '', '?cap=' + capId);
+            loadChapter(capId);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+        });
+      }
+
+      function loadChapter(capId) {
+        const index = chapters.findIndex(function (c) { return c.id === capId; });
+        const chapter = index >= 0 ? chapters[index] : chapters[0];
+        if (!chapter) return;
+
+        currentChapterId = chapter.id;
+        if (breadcrumbEl) {
+          breadcrumbEl.textContent = chapter.number + '. ' + chapter.title;
+        }
+        renderSidebar(searchInput.value);
+
+        fetch(chapter.file)
+          .then(function (res) {
+            if (!res.ok) throw new Error('Falha ao carregar capítulo');
+            return res.text();
+          })
+          .then(function (md) {
+            const rawHtml = window.marked ? window.marked.parse(md) : md;
+            articleEl.innerHTML = transformAlerts(rawHtml);
+            document.title = chapter.title + ' — Guia Pulsares Research';
+            buildTOC();
+            renderPagination(index >= 0 ? index : 0);
+          })
+          .catch(function () {
+            articleEl.innerHTML = '<div class="callout callout-warning"><strong>Erro:</strong> Não foi possível carregar este capítulo.</div>';
+          });
+      }
+
+      fetch('guia/manifest.json')
+        .then(function (r) { return r.json(); })
+        .then(function (manifest) {
+          chapters = manifest.chapters || [];
+          const params = new URLSearchParams(window.location.search);
+          const initialCap = params.get('cap') || (chapters[0] && chapters[0].id);
+          loadChapter(initialCap);
+        });
+
+      searchInput.addEventListener('input', function () {
+        renderSidebar(searchInput.value);
+      });
+
+      window.addEventListener('popstate', function () {
+        const params = new URLSearchParams(window.location.search);
+        const cap = params.get('cap') || (chapters[0] && chapters[0].id);
+        if (cap) loadChapter(cap);
+      });
+    })();
+  </script>
+</body>
+
+</html>

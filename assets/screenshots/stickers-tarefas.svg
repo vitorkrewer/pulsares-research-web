@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 780" fill="none">
+  <rect width="1280" height="780" rx="14" fill="#F7F3EB"/>
+  <!-- Left Half: Sticker Board -->
+  <rect x="28" y="28" width="600" height="724" rx="12" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <text x="56" y="68" fill="#C96140" font-family="sans-serif" font-size="11" font-weight="700">QUADRO DE STICKERS · INSIGHTS DE PESQUISA</text>
+  <text x="56" y="96" fill="#162722" font-family="Georgia, serif" font-size="22" font-weight="bold">Mural de Hipóteses &amp;Revisão</text>
+
+  <rect x="56" y="124" width="260" height="190" rx="10" fill="#FEF3C7" stroke="#F59E0B"/>
+  <text x="76" y="154" fill="#92400E" font-family="sans-serif" font-size="11" font-weight="700">📌 FIXADO · HIPÓTESE 01</text>
+  <text x="76" y="182" fill="#162722" font-family="Georgia, serif" font-size="14" font-weight="bold">Comparar latência SQLite WAL vs. IndexedDB</text>
+  <text x="76" y="212" fill="#4A524D" font-family="sans-serif" font-size="12">Incluir benchmark empírico na Seção 4.2 da Dissertação com gráficos vetoriais.</text>
+
+  <rect x="336" y="124" width="260" height="190" rx="10" fill="#DCFCE7" stroke="#10B981"/>
+  <text x="356" y="154" fill="#065F46" font-family="sans-serif" font-size="11" font-weight="700">📌 FIXADO · CITAÇÃO CHAVE</text>
+  <text x="356" y="182" fill="#162722" font-family="Georgia, serif" font-size="14" font-weight="bold">Revisar norma ABNT NBR 10520:2023</text>
+  <text x="356" y="212" fill="#4A524D" font-family="sans-serif" font-size="12">Autores pessoas físicas dentro dos parênteses usam apenas inicial maiúscula (Kuhn, 1962, p. 47).</text>
+
+  <rect x="56" y="334" width="540" height="170" rx="10" fill="#DBEAFE" stroke="#3B82F6"/>
+  <text x="76" y="364" fill="#1E40AF" font-family="sans-serif" font-size="11" font-weight="700">ROTEIRO DE EXPERIMENTOS</text>
+  <text x="76" y="392" fill="#162722" font-family="Georgia, serif" font-size="15" font-weight="bold">Validar importação de manuscritos .docx e .odt acima de 200 páginas</text>
+  <text x="76" y="422" fill="#4A524D" font-family="sans-serif" font-size="12.5">Descompressão concorrente + extração nativa em Go garantindo leitura instantânea sem bloqueio de stream.</text>
+
+  <!-- Right Half: Academic Task List -->
+  <rect x="652" y="28" width="600" height="724" rx="12" fill="#FFFFFF" stroke="#DDD4C3"/>
+  <text x="680" y="68" fill="#20352F" font-family="sans-serif" font-size="11" font-weight="700">CRONOGRAMA &amp; TAREFAS DE PESQUISA</text>
+  <text x="680" y="96" fill="#162722" font-family="Georgia, serif" font-size="22" font-weight="bold">Sprint de Qualificação do Mestrado</text>
+
+  <!-- Task 1 -->
+  <rect x="680" y="124" width="544" height="96" rx="10" fill="#FAF7F2" stroke="#C96140"/>
+  <circle cx="706" cy="154" r="9" stroke="#C96140" stroke-width="2.5"/>
+  <text x="726" y="159" fill="#162722" font-family="sans-serif" font-size="14" font-weight="700">Finalizar Capítulo 2 — Fundamentação Teórica</text>
+  <rect x="1116" y="140" width="90" height="22" rx="11" fill="#FBECE7"/>
+  <text x="1132" y="155" fill="#C96140" font-family="sans-serif" font-size="10.5" font-weight="700">Alta Prioridade</text>
+  <text x="726" y="188" fill="#5D645F" font-family="sans-serif" font-size="12">✓ 3/4 subtarefas concluídas · Entrega: 15 Nov 2026</text>
+
+  <!-- Task 2 -->
+  <rect x="680" y="236" width="544" height="96" rx="10" fill="#FAF7F2" stroke="#DDD4C3"/>
+  <circle cx="706" cy="266" r="9" fill="#15803D"/>
+  <text x="726" y="271" fill="#5D645F" font-family="sans-serif" font-size="14" font-weight="600" text-decoration="line-through">Fichar artigo seminal de Kleppmann et al. (2019)</text>
+  <rect x="1116" y="252" width="90" height="22" rx="11" fill="#DCFCE7"/>
+  <text x="1136" y="267" fill="#15803D" font-family="sans-serif" font-size="10.5" font-weight="700">Concluída</text>
+  <text x="726" y="300" fill="#5D645F" font-family="sans-serif" font-size="12">✓ 18 destaques ancorados e 7 citações ABNT exportadas</text>
+</svg>
+

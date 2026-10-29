@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artigo — Blog Pulsares Research</title>
+  <link rel="icon" type="image/png" href="assets/pulsares-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=0.7.1" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+  <!-- HEADER FIXO -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pulsares Research">
+      <img src="assets/pulsares-icon.png" alt="Logo Pulsares Research" />
+      <span>Pulsares Research</span>
+    </a>
+
+    <nav class="header-nav" aria-label="Navegação principal">
+      <a href="recursos.html">Recursos</a>
+      <a href="guia-usuario.html">Guia de Uso</a>
+      <a href="index.html#arquitetura">Arquitetura</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="help.html">Ajuda &amp; FAQ</a>
+      <a class="active" href="blog.html">Blog</a>
+      <a href="release.html">Releases</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-download-btn" href="index.html#downloads">
+        <span>Baixar</span>
+        <span id="header-version-badge">v0.7.1</span>
+      </a>
+      <button class="menu-toggle-btn" id="mobile-menu-toggle" type="button" aria-label="Abrir menu de navegação"
+        aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="post-container">
+    <a href="blog.html" class="back-to-blog">&larr; Voltar para todos os artigos</a>
+    <div id="post-meta-header" class="post-meta-header"></div>
+    <article id="post-body" class="markdown-body post-article">
+      <p>Carregando artigo...</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="footer-creator">
+        Desenvolvido por <a href="https://www.linkedin.com/in/vitorkrewer/" target="_blank" rel="noreferrer">Vitor Krewer</a>
+      </div>
+      <div>
+        © <span id="year"></span> Pulsares Research · <a href="blog.html">Blog</a> · <a href="guia-usuario.html">Guia de Uso</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=0.7.1"></script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get('slug');
+      const metaEl = document.getElementById('post-meta-header');
+      const bodyEl = document.getElementById('post-body');
+
+      fetch('posts/posts.json')
+        .then(function (r) { return r.json(); })
+        .then(function (posts) {
+          const post = posts.find(function (p) { return p.slug === slug; }) || posts[0];
+          if (!post) throw new Error('Post não encontrado');
+
+          document.title = post.title + ' — Pulsares Research';
+          metaEl.innerHTML =
+            '<div class="blog-card-meta">' +
+            '<span class="blog-badge">' + post.version + '</span>' +
+            '<span class="blog-category">' + post.category + '</span>' +
+            '<time datetime="' + post.date + '">' + post.displayDate + '</time>' +
+            '<span class="blog-reading-time">' + post.readingTime + '</span>' +
+            '</div>';
+
+          return fetch(post.file);
+        })
+        .then(function (r) { return r.text(); })
+        .then(function (md) {
+          bodyEl.innerHTML = window.marked ? window.marked.parse(md) : md;
+        })
+        .catch(function () {
+          bodyEl.innerHTML = '<p>Não foi possível carregar o artigo solicitado.</p>';
+        });
+    })();
+  </script>
+</body>
+
+</html>

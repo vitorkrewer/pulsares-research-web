@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Catálogo completo de recursos do Pulsares Research: Biblioteca Local-First, Leitor de PDF com Âncoras, Citações ABNT, Grafo D3, Fichamentos, Editor Científico KaTeX/Mermaid, IDE de Projetos Acadêmicos e Importador .docx/.odt/.doc." />
+  <link rel="icon" type="image/png" href="assets/pulsares-icon.png" />
+  <title>Recursos &amp; Funcionalidades — Pulsares Research</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=0.7.1" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pulsares Research">
+      <img src="assets/pulsares-icon.png" alt="Logo Pulsares Research" />
+      <span>Pulsares Research</span>
+    </a>
+
+    <nav class="header-nav" aria-label="Navegação principal">
+      <a class="active" href="recursos.html">Recursos</a>
+      <a href="guia-usuario.html">Guia de Uso</a>
+      <a href="index.html#arquitetura">Arquitetura</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="help.html">Ajuda &amp; FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="release.html">Releases</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-download-btn" href="index.html#downloads">
+        <span>Baixar</span>
+        <span id="header-version-badge">v0.7.1</span>
+      </a>
+      <button class="menu-toggle-btn" id="mobile-menu-toggle" type="button" aria-label="Abrir menu de navegação"
+        aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Navegação mobile" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a class="active" href="recursos.html">Recursos</a>
+      <a href="guia-usuario.html">Guia de Uso</a>
+      <a href="index.html#arquitetura">Arquitetura Técnica</a>
+      <a href="screenshots.html">Galeria de Telas</a>
+      <a href="help.html">Ajuda &amp; FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="release.html">Notas de Release (Changelog)</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a class="btn-drawer-download" href="index.html#downloads">
+        <span>Baixar Pulsares Research</span>
+      </a>
+      <span class="drawer-version-tag">Versão mais recente: v0.7.1</span>
+    </div>
+  </aside>
+
+  <main id="top">
+    <section class="features-hero">
+      <div class="starfield" aria-hidden="true"></div>
+      <p class="kicker">Especificações &amp; Módulos Acadêmicos</p>
+      <h1>Tudo para sua pesquisa.<br /><em>Sob seu controle local.</em></h1>
+      <p>Conheça em detalhes os módulos que integram leitura, fichamento, rede conceitual e redação acadêmica ABNT no Pulsares Research.</p>
+
+      <div class="category-nav-bar" aria-label="Navegação por categorias de recursos">
+        <a class="category-nav-btn" href="#projetos-importador">IDE de Projetos &amp; Importador</a>
+        <a class="category-nav-btn" href="#biblioteca-leitor">Biblioteca &amp; Leitor PDF</a>
+        <a class="category-nav-btn" href="#fichamentos-ciencias">Fichamentos &amp; Editor Científico</a>
+        <a class="category-nav-btn" href="#grafo-colecoes">Grafo D3 &amp; Coleções</a>
+        <a class="category-nav-btn" href="#stickers-tarefas">Stickers &amp; Tarefas</a>
+        <a class="category-nav-btn" href="#privacidade-ia">Local-First, Cofre &amp; IA</a>
+      </div>
+    </section>
+
+    <section class="features-container">
+      <!-- GRUPO 1: IDE DE PROJETOS ACADÊMICOS & IMPORTADOR ESTRUTURAL -->
+      <div class="feature-group" id="projetos-importador">
+        <div class="feature-group-header">
+          <div>
+            <p class="kicker">Módulo v0.7.0 &amp; v0.7.1</p>
+            <h2>IDE de Projetos Acadêmicos &amp; Importador Estrutural</h2>
+            <p>Ambiente completo de 3 colunas para escrever trabalhos acadêmicos normatizados ou importar manuscritos existentes.</p>
+          </div>
+          <span class="feature-tag-status">Novo na v0.7.1</span>
+        </div>
+
+        <div class="feature-detail-grid">
+          <article class="feature-detail-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" /></svg>
+              </div>
+              <span class="feature-tag-status">Importador v0.7.1</span>
+            </div>
+            <h3>Importador de Documentos (.docx, .odt, .doc)</h3>
+            <p>Importe manuscritos existentes diretamente para o projeto acadêmico com tela de progresso animada, diagnóstico de etapas e logs no backend Go.</p>
+            <ul>
+              <li>Seletor dedicado de formato (.docx Word, .odt LibreOffice, .doc legado/RTF)</li>
+              <li>Detecção automática de Headings (H1, H2, H3), Resumo/Abstract e Referências</li>
+              <li>Vinculador manual de Bookmarks para promover parágrafos a capítulos/subseções</li>
+              <li>Preenchimento direto dos campos do modelo escolhido com a estrutura importada</li>
+            </ul>
+          </article>
+
+          <article class="feature-detail-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm16 16V5H5v14h14z" /></svg>
+              </div>
+              <span class="feature-tag-status">ABNT NBR 14724 / 6022</span>
+            </div>
+            <h3>5 Modelos Acadêmicos Estruturados</h3>
+            <p>Comece com a estrutura normativa pronta e orientações metodológicas embutidas em cada capítulo.</p>
+            <ul>
+              <li>Tese de Doutorado e Dissertação de Mestrado (ABNT NBR 14724)</li>
+              <li>Trabalho de Conclusão de Curso / Monografia (ABNT NBR 14724)</li>
+              <li>Artigo Científico (ABNT NBR 6022) e Projeto de Pesquisa (NBR 15287)</li>
+              <li>Alternância instantânea entre Editor, Folha A4 real e Prévia ABNT Completa</li>
+            </ul>
+          </article>
+
+          <article class="feature-detail-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" /></svg>
+              </div>
+              <span class="feature-tag-status">ABNT NBR 6023 / 10520</span>
+            </div>
+            <h3>Compilação Automática de Referências</h3>
+            <p>Cite qualquer obra, destaque ou fichamento pelo Painel de Pesquisa lateral e veja a lista de referências ser montada sozinha.</p>
+            <ul>
+              <li>Inserção de citação direta curta ou longa (&gt; 3 linhas com recuo de 4 cm)</li>
+              <li>Inclusão e ordenação alfabética automática na seção pós-textual de Referências</li>
+              <li>Exportação unificada para Word ABNT (.docx), Markdown (.md) e Página A4 (.html)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <!-- GRUPO 2: BIBLIOTECA & LEITOR PDF -->
+      <div class="feature-group" id="biblioteca-leitor">
+        <div class="feature-group-header">
+          <div>
+            <p class="kicker">Acervo &amp; Rastreabilidade</p>
+            <h2>Biblioteca Acadêmica &amp; Leitor Profundo de PDF</h2>
+            <p>Catalogação rigorosa sem mover seus arquivos arbitrariamente e leitura com âncoras resilientes.</p>
+          </div>
+          <span class="feature-tag-status">Núcleo Essencial</span>
+        </div>
+
+        <div class="feature-detail-grid">
+          <article class="feature-detail-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z" /></svg>
+              </div>
+              <span class="feature-tag-status">Catalogação</span>
+            </div>
+            <h3>Biblioteca Local com Etiquetas em Grupo</h3>
+            <p>Gerencie dezenas ou centenas de obras com metadados verificados para citação e filtros combináveis.</p>
+            <ul>
+              <li>Suporte a prefixos de grupo em etiquetas (ex.: #tema:ia, #status:lendo)</li>
+              <li>Visualização em Tabela densa ou Grade de Cards com indicador de progresso</li>
+              <li>Organização opcional de subpastas por tipo de obra no diretório da biblioteca</li>
+            </ul>
+          </article>
+
+          <article class="feature-detail-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4z" /></svg>
+              </div>
+              <span class="feature-tag-status">Leitor PDF</span>
+            </div>
+            <h3>Âncoras Determinísticas de Leitura</h3>
+            <p>Cada seleção de texto oferece 4 ações imediatas: Destacar, Criar Nota, Criar Citação ABNT e Paráfrase Assistida por IA.</p>
+            <ul>
+              <li>Registro de obra, página, coordenadas geométricas e trecho original</li>
+              <li>Clique em qualquer nota ou citação para reabrir o PDF exatamente na página de origem</li>
+              <li>Modo integrado com painel lateral ou abertura em janela destacada</li>
+            </ul>
+          </article>
+
+          <article class="feature-detail-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" /></svg>
+              </div>
+              <span class="feature-tag-status">ABNT NBR 10520</span>
+            </div>
+            <h3>Módulo Dedicado de Citações e Notas</h3>
+            <p>Consulte, filtre e exporte todas as suas citações e anotações transversais ao acervo.</p>
+            <ul>
+              <li>Cópia rápida de citação direta, indireta e referência ABNT NBR 6023 completa</li>
+              <li>Filtro por obra, coleção temática, etiqueta ou termo pesquisado</li>
+              <li>Conservação integral do vínculo com a fonte ao mover ou exportar</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <!-- GRUPO 3: FICHAMENTOS & EDITOR CIENTÍFICO -->
+      <div class="feature-group" id="fichamentos-ciencias">
+        <div class="feature-group-header">
+          <div>
+            <p class="kicker">Módulo v0.6.0</p>
+            <h2>Fichamentos Acadêmicos &amp; Editor Científico</h2>
+            <p>Ferramentas de primeira classe para Ciências Exatas, Engenharias, Biológicas e Humanidades.</p>
+          </div>
+          <span class="feature-tag-status">Científico &amp; ABNT</span>
+        </div>
+
+        <div class="feature-detail-grid">
+          <article class="feature-detail-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5z" /></svg>
+              </div>
+              <span class="feature-tag-status">Metodologia</span>
+            </div>
+            <h3>Obras Digitais e Livros Físicos Avulsos</h3>
+            <p>Elabore fichamentos completos tanto de PDFs do seu acervo quanto de livros impressos de bibliotecas físicas.</p>
+            <ul>
+              <li>4 modalidades: Temático, Citações &amp; Conceitos, Crítico-Analítico e Bibliográfico (NBR 6028)</li>
+              <li>Estrutura guiada de 10 seções acadêmicas com integração direta às citações da obra</li>
+              <li>Exportação nativa para Word ABNT (.docx), Markdown (.md) e Página Científica (.html)</li>
+            </ul>
+          </article>
+
+          <article class="feature-detail-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M18 4H6v2l6.5 6L6 18v2h12v-3h-7l5-5-5-5h7z" /></svg>
+              </div>
+              <span class="feature-tag-status">KaTeX &amp; mhchem</span>
+            </div>
+            <h3>Fórmulas LaTeX, Química &amp; Cálculos Math.js</h3>
+            <p>Escreva notação matemática e química rigorosa com renderização instantânea offline.</p>
+            <ul>
+              <li>Fórmulas inline e blocos de equação numerados via KaTeX</li>
+              <li>Reações químicas e estequiometria via pacote mhchem (`\ce{...}`)</li>
+              <li>Cálculos dinâmicos inline avaliados em tempo real com Math.js</li>
+            </ul>
+          </article>
+
+          <article class="feature-detail-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2z" /></svg>
+              </div>
+              <span class="feature-tag-status">Mermaid &amp; Figuras</span>
+            </div>
+            <h3>Diagramas Mermaid.js &amp; Figuras ABNT em Disco</h3>
+            <p>Modele fluxogramas e insira imagens normatizadas sem inflar o banco SQLite.</p>
+            <ul>
+              <li>Diagramas vetoriais SVG ao vivo (mapas mentais, ciclos bioquímicos, fluxos)</li>
+              <li>Bloco de Figura ABNT NBR 14724 com legenda superior e fonte inferior</li>
+              <li>Imagens salvas fisicamente em pastas organizadas (`&lt;Biblioteca&gt;/Projetos/...`)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <!-- GRUPO 4: GRAFO D3 & COLEÇÕES -->
+      <div class="feature-group" id="grafo-colecoes">
+        <div class="feature-group-header">
+          <div>
+            <p class="kicker">Módulos v0.3.0 &amp; v0.4.0</p>
+            <h2>Grafo de Conhecimento D3 &amp; Coleções Temáticas</h2>
+            <p>Conecte ideias entre diferentes autores e estruture dossiês temáticos para cada pesquisa.</p>
+          </div>
+          <span class="feature-tag-status">Rede Epistemológica</span>
+        </div>
+
+        <div class="feature-detail-grid">
+          <article class="feature-detail-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" /></svg>
+              </div>
+              <span class="feature-tag-status">D3-Force</span>
+            </div>
+            <h3>Relações Semânticas Tipadas</h3>
+            <p>Mais do que links simples: qualifique a natureza epistemológica de cada conexão entre nós do seu acervo.</p>
+            <ul>
+              <li>Tipos: Relaciona, Fundamenta, Complementa, Contradiz, Aprofunda, Exemplifica e Dúvida</li>
+              <li>Painel lateral de inspeção com leitura do trecho citado e abertura direta da obra</li>
+              <li>Filtros por tipo de nó, relação, coleção e busca textual instantânea</li>
+            </ul>
+          </article>
+
+          <article class="feature-detail-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z" /></svg>
+              </div>
+              <span class="feature-tag-status">Coleções</span>
+            </div>
+            <h3>Coleções com Drag &amp; Drop e Estatísticas</h3>
+            <p>Agrupe obras por disciplina, capítulo ou artigo com cores e ícones personalizados na barra lateral.</p>
+            <ul>
+              <li>Arraste obras da Biblioteca diretamente para uma coleção na barra lateral</li>
+              <li>Aba de Visão Geral com métricas de obras, notas, citações e distribuição por tipo</li>
+              <li>Integração nativa das Coleções como nós conectáveis no Grafo de Conhecimento</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <!-- GRUPO 5: STICKERS, TAREFAS & PRIVACIDADE -->
+      <div class="feature-group" id="stickers-tarefas">
+        <div class="feature-group-header">
+          <div>
+            <p class="kicker">Módulo v0.5.0 &amp; Soberania</p>
+            <h2>Quadros de Stickers, Tarefas &amp; Privacidade por Padrão</h2>
+            <p>Organização ágil da rotina acadêmica combinada com segurança criptográfica local.</p>
+          </div>
+          <span class="feature-tag-status">Produtividade &amp; Segurança</span>
+        </div>
+
+        <div class="feature-detail-grid">
+          <article class="feature-detail-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5z" /></svg>
+              </div>
+              <span class="feature-tag-status">Stickers</span>
+            </div>
+            <h3>Quadros de Stickers (Post-its de Pesquisa)</h3>
+            <p>Capture hipóteses, lembretes de revisão e insights rápidos em múltiplos quadros temáticos coloridos.</p>
+            <ul>
+              <li>8 paletas de cores suaves adaptadas aos temas claro e escuro</li>
+              <li>Fixação no topo, reordenação por Drag &amp; Drop e busca instantânea</li>
+            </ul>
+          </article>
+
+          <article class="feature-detail-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+              </div>
+              <span class="feature-tag-status">Tarefas</span>
+            </div>
+            <h3>Listas de Tarefas Acadêmicas</h3>
+            <p>Acompanhe prazos de submissão, leituras pendentes e etapas de escrita com subtarefas e prioridades.</p>
+            <ul>
+              <li>Prioridades semânticas (Alta, Média, Baixa), datas de entrega e notas contextuais</li>
+              <li>Arquivamento de listas concluídas com preservação do histórico</li>
+            </ul>
+          </article>
+
+          <article class="feature-detail-card" id="privacidade-ia">
+            <div class="feature-card-header">
+              <div class="feature-icon-badge">
+                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" /></svg>
+              </div>
+              <span class="feature-tag-status">Cofre AES-256</span>
+            </div>
+            <h3>Cofre Criptográfico &amp; Consentimento de IA</h3>
+            <p>Suporte opcional aos modelos Gemini, Claude e OpenAI sob controle estrito do pesquisador.</p>
+            <ul>
+              <li>Chaves de API cifradas com AES-256 no cofre local do dispositivo</li>
+              <li>Caixa de consentimento explícito informando exatamente qual trecho é enviado</li>
+              <li>Funcionamento 100% completo sem nenhuma chave configurada</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand-col">
+        <a class="brand" href="index.html">
+          <img src="assets/pulsares-icon.png" alt="" />
+          <span>Pulsares Research</span>
+        </a>
+        <p class="footer-tagline">
+          Ambiente desktop pessoal e local-first para leitura profunda, anotações ancoradas, citações ABNT, fichamentos e projetos acadêmicos.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="guia-usuario.html">Guia de Uso</a></li>
+          <li><a href="screenshots.html">Galeria de Telas</a></li>
+          <li><a href="help.html">Ajuda &amp; FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="release.html">Releases</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Tecnologias</h5>
+        <ul>
+          <li><a href="https://wails.io" target="_blank" rel="noreferrer">Wails + Go</a></li>
+          <li><a href="https://www.sqlite.org" target="_blank" rel="noreferrer">SQLite Local</a></li>
+          <li><a href="https://tiptap.dev" target="_blank" rel="noreferrer">Tiptap + KaTeX</a></li>
+          <li><a href="https://mermaid.js.org" target="_blank" rel="noreferrer">Mermaid.js &amp; D3</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Código &amp; Releases</h5>
+        <p style="font-size: 13px; line-height: 1.5; margin: 0 0 12px; color: #8fa39b;">Acesse o repositório oficial no GitHub.</p>
+        <div class="social-icon-links">
+          <a class="social-icon-btn" href="https://github.com/vitorkrewer/pulsares-research-web" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" /></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-creator">Desenvolvido por <a href="https://www.linkedin.com/in/vitorkrewer/" target="_blank" rel="noreferrer">Vitor Krewer</a></div>
+      <div>© <span id="year"></span> Pulsares Research · Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" id="scroll-top-btn" type="button" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z" /></svg>
+  </button>
+
+  <script src="script.js?v=0.7.1"></script>
+</body>
+
+</html>
+

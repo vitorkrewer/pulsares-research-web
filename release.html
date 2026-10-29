@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Releases &amp; Changelog — Pulsares Research</title>
+  <meta name="description"
+    content="Histórico completo de versões, melhorias, correções e evolução arquitetural do Pulsares Research — do manifesto v0.1.0 à IDE Acadêmica e Importador Estrutural v0.7.1." />
+  <link rel="icon" type="image/png" href="assets/pulsares-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=0.7.1" />
+</head>
+
+<body>
+  <!-- HEADER FIXO -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pulsares Research">
+      <img src="assets/pulsares-icon.png" alt="Logo Pulsares Research" />
+      <span>Pulsares Research</span>
+    </a>
+
+    <nav class="header-nav" aria-label="Navegação principal">
+      <a href="recursos.html">Recursos</a>
+      <a href="guia-usuario.html">Guia de Uso</a>
+      <a href="index.html#arquitetura">Arquitetura</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="help.html">Ajuda &amp; FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a class="active" href="release.html">Releases</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-download-btn" href="index.html#downloads">
+        <span>Baixar</span>
+        <span id="header-version-badge">v0.7.1</span>
+      </a>
+      <button class="menu-toggle-btn" id="mobile-menu-toggle" type="button" aria-label="Abrir menu de navegação"
+        aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- DRAWER MOBILE -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Navegação mobile" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="recursos.html">Recursos</a>
+      <a href="guia-usuario.html">Guia de Uso</a>
+      <a href="index.html#arquitetura">Arquitetura Técnica</a>
+      <a href="screenshots.html">Galeria de Telas</a>
+      <a href="help.html">Ajuda &amp; FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a class="active" href="release.html">Notas de Release (Changelog)</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a class="btn-drawer-download" href="index.html#downloads">
+        <span>Baixar Pulsares Research</span>
+      </a>
+      <span class="drawer-version-tag">Versão mais recente: v0.7.1</span>
+    </div>
+  </aside>
+
+  <main id="top">
+    <section class="page-hero">
+      <div class="starfield" aria-hidden="true"></div>
+      <p class="kicker">Histórico de Versões &amp; Evolução</p>
+      <h1 class="page-title">Releases &amp; Changelog</h1>
+      <p class="page-subtitle">
+        Acompanhe cada ciclo de engenharia do Pulsares Research — desde o manifesto arquitetural local-first até a
+        IDE de Projetos Acadêmicos ABNT e o Importador Estrutural de Manuscritos.
+      </p>
+
+      <div class="version-pills" aria-label="Navegação rápida por versão">
+        <a href="#v0-7-1" class="version-pill active">v0.7.1 (Atual)</a>
+        <a href="#v0-7-0" class="version-pill">v0.7.0</a>
+        <a href="#v0-6-0" class="version-pill">v0.6.0</a>
+        <a href="#v0-5-0" class="version-pill">v0.5.0</a>
+        <a href="#v0-4-2" class="version-pill">v0.4.2</a>
+        <a href="#v0-4-0" class="version-pill">v0.4.0</a>
+        <a href="#v0-3-0" class="version-pill">v0.3.0</a>
+        <a href="#v0-2-0" class="version-pill">v0.2.0</a>
+        <a href="#v0-1-0" class="version-pill">v0.1.0</a>
+      </div>
+    </section>
+
+    <section class="release-timeline">
+      <!-- v0.7.1 -->
+      <article id="v0-7-1" class="release-card highlight-card">
+        <div class="release-header">
+          <div>
+            <span class="release-badge latest">Última Versão Estável</span>
+            <h2 class="release-version">v0.7.1 — Importador Estrutural de Documentos &amp; Estabilidade da IDE</h2>
+          </div>
+          <time class="release-date" datetime="2026-10-29">29 de Outubro de 2026</time>
+        </div>
+        <p class="release-summary">
+          Introduz o <strong>Importador Estrutural de Documentos Acadêmicos (<code>.docx</code>, <code>.odt</code> e
+            <code>.doc</code>)</strong> com detecção automática de capítulos, vinculador interativo de Bookmarks e
+          preenchimento inteligente de modelos ABNT, além de eliminar travamentos na navegação da IDE.
+        </p>
+
+        <div class="release-sections">
+          <div class="release-group">
+            <h3>Adicionado</h3>
+            <ul>
+              <li><strong>Importador Estrutural de Documentos Acadêmicos (<code>.docx</code>, <code>.odt</code>,
+                  <code>.doc</code>)</strong>: novo botão <em>Importar</em> ao lado de <em>Novo Projeto</em> com
+                seletor explícito de formato (Auto, Word <code>.docx</code>, OpenDocument <code>.odt</code> ou Word
+                Legado <code>.doc</code>).</li>
+              <li><strong>Tela Dedicada de Processamento em Tempo Real</strong>: substitui a área de upload durante a
+                leitura com spinner animado, trilha visual de 4 etapas de extração e logs estruturados no backend Go
+                (<code>[ImportDocument]</code>).</li>
+              <li><strong>Analisador Estrutural &amp; Vinculador de Bookmarks (Títulos Não Detectados)</strong>:
+                reconhece automaticamente estilos <code>Heading 1..3</code>, numeração progressiva ABNT (<code>1</code>,
+                <code>1.1</code>, <code>1.1.1</code>), elementos pré-textuais (Resumo, Abstract, Palavras-chave) e
+                Referências, permitindo promover parágrafos candidatos a Capítulo ou Seção em 1 clique.</li>
+              <li><strong>Preenchimento Inteligente do Modelo Escolhido</strong>: preenche os capítulos correspondentes
+                do template selecionado (Artigo NBR 6022, Monografia/TCC, Dissertação ou Tese NBR 14724) preservando a
+                orientação metodológica de cada seção.</li>
+              <li><strong>Portal Público &amp; Guia Interativo Integrados</strong>: integração direta entre o app
+                desktop e a documentação interativa no GitHub Pages.</li>
+            </ul>
+          </div>
+
+          <div class="release-group">
+            <h3>Corrigido &amp; Melhorado</h3>
+            <ul>
+              <li><strong>Eliminação de Travamento ao Retornar à Lista de Projetos</strong>: substituição da recarga
+                completa com <code>JSON.parse</code> de todos os projetos por atualização cirúrgica em memória ao sair
+                da IDE.</li>
+              <li><strong>Desacoplamento de Re-render no Tiptap</strong>: estabilização da referência de
+                <code>onChange</code> em <code>ScientificRichTextEditor.tsx</code>, evitando recriação de listeners a
+                cada tecla digitada.</li>
+              <li><strong>Visualização Padrão em Tabela &amp; Ergonomia da Topbar</strong>: listagem de Projetos
+                inicia em modo Tabela; botão de recolher árvore movido para o cabeçalho de <em>Elementos
+                  Pré-Textuais</em>; seletor compacto de modo de visualização com ícones e botão <em>Exportar</em>
+                enxuto.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- v0.7.0 -->
+      <article id="v0-7-0" class="release-card">
+        <div class="release-header">
+          <div>
+            <span class="release-badge">Minor Release</span>
+            <h2 class="release-version">v0.7.0 — IDE de Projetos Acadêmicos ABNT &amp; Estúdio de Figuras</h2>
+          </div>
+          <time class="release-date" datetime="2026-10-28">28 de Outubro de 2026</time>
+        </div>
+        <p class="release-summary">
+          Lançamento do módulo completo de <strong>Projetos Acadêmicos</strong> com templates estruturais ABNT,
+          visualização em tempo real de Folha A4 paginada, Estúdio de Figuras científicas e compilação automática de
+          referências.
+        </p>
+        <div class="release-sections">
+          <div class="release-group">
+            <h3>Destaques do Ciclo</h3>
+            <ul>
+              <li><strong>IDE de Projetos Acadêmicos em 3 Colunas</strong>: árvore de capítulos e elementos
+                pré-textuais à esquerda, editor científico central (Editor / Folha A4 / Prévia ABNT) e painel lateral
+                de pesquisa à direita.</li>
+              <li><strong>Templates Metodológicos ABNT</strong>: Artigo Científico (NBR 6022), Monografia/TCC (NBR
+                14724), Dissertação de Mestrado, Tese de Doutorado, Projeto de Pesquisa (NBR 15287) e Relatório
+                Técnico (NBR 10719).</li>
+              <li><strong>Estúdio de Figuras ABNT</strong>: recorte (crop), rotação, ajustes de brilho/contraste,
+                escala de cinza e legenda padronizada com título superior e fonte inferior obrigatória.</li>
+              <li><strong>Citação em 1 Clique &amp; Exportação</strong>: insira citações diretas ou indiretas do
+                acervo e exporte o manuscrito em HTML ABNT pronto para PDF, Word (<code>.doc</code>) ou Markdown.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- v0.6.0 -->
+      <article id="v0-6-0" class="release-card">
+        <div class="release-header">
+          <div>
+            <span class="release-badge">Minor Release</span>
+            <h2 class="release-version">v0.6.0 — Fichamentos Acadêmicos &amp; Editor Científico Tiptap</h2>
+          </div>
+          <time class="release-date" datetime="2026-10-28">28 de Outubro de 2026</time>
+        </div>
+        <p class="release-summary">
+          Introduz o módulo de <strong>Fichamentos Acadêmicos</strong> e o <strong>Editor Científico
+            Compartilhado</strong> com suporte nativo a LaTeX (KaTeX), diagramas Mermaid, blocos de cálculo e teoremas.
+        </p>
+      </article>
+
+      <!-- v0.5.0 -->
+      <article id="v0-5-0" class="release-card">
+        <div class="release-header">
+          <div>
+            <span class="release-badge">Minor Release</span>
+            <h2 class="release-version">v0.5.0 — Stickers Rápidos &amp; Gestão de Tarefas Acadêmicas</h2>
+          </div>
+          <time class="release-date" datetime="2026-10-28">28 de Outubro de 2026</time>
+        </div>
+        <p class="release-summary">
+          Adiciona o mural de <strong>Stickers Rápidos</strong> para insights efêmeros e o gerenciador de
+          <strong>Tarefas Acadêmicas</strong> com subtarefas, prioridades, prazos e vínculo direto com obras do acervo.
+        </p>
+      </article>
+
+      <!-- v0.4.2 -->
+      <article id="v0-4-2" class="release-card">
+        <div class="release-header">
+          <div>
+            <span class="release-badge">Patch Release</span>
+            <h2 class="release-version">v0.4.2 — Refinamento de Leitura PDF &amp; Persistência de Sessão</h2>
+          </div>
+          <time class="release-date" datetime="2026-10-28">28 de Outubro de 2026</time>
+        </div>
+        <p class="release-summary">
+          Melhorias de fluidez no leitor PDF multi-abas, restauração imediata de página/zoom e otimização de busca no
+          acervo SQLite.
+        </p>
+      </article>
+
+      <!-- v0.4.0 -->
+      <article id="v0-4-0" class="release-card">
+        <div class="release-header">
+          <div>
+            <span class="release-badge">Minor Release</span>
+            <h2 class="release-version">v0.4.0 — Coleções Temáticas, Grafo D3.js &amp; Busca Global</h2>
+          </div>
+          <time class="release-date" datetime="2026-10-28">28 de Outubro de 2026</time>
+        </div>
+        <p class="release-summary">
+          Organização do acervo em <strong>Coleções Temáticas</strong> com identidade visual, <strong>Grafo de
+            Conexões</strong> interativo em D3.js (relações de suporte, contraste, citação e derivação) e paleta de
+          comando global (<code>Ctrl+K</code>).
+        </p>
+      </article>
+
+      <!-- v0.3.0 -->
+      <article id="v0-3-0" class="release-card">
+        <div class="release-header">
+          <div>
+            <span class="release-badge">Minor Release</span>
+            <h2 class="release-version">v0.3.0 — Anotações Resilientes, Motor ABNT &amp; Metadados</h2>
+          </div>
+          <time class="release-date" datetime="2026-10-28">28 de Outubro de 2026</time>
+        </div>
+        <p class="release-summary">
+          Âncoras resilientes para destaques e notas, gerador determinístico de referências e citações ABNT (NBR
+          6023 / NBR 10520) e enriquecimento revisável de metadados via ISBN, DOI e ISSN.
+        </p>
+      </article>
+
+      <!-- v0.2.0 -->
+      <article id="v0-2-0" class="release-card">
+        <div class="release-header">
+          <div>
+            <span class="release-badge">Minor Release</span>
+            <h2 class="release-version">v0.2.0 — Catálogo Local SQLite &amp; Leitor PDF Nativo</h2>
+          </div>
+          <time class="release-date" datetime="2026-10-28">28 de Outubro de 2026</time>
+        </div>
+        <p class="release-summary">
+          Implementação do núcleo Go + Wails com banco SQLite versionado, importação não-destrutiva de arquivos com
+          hash SHA-256 e leitor PDF integrado com painel lateral de anotações.
+        </p>
+      </article>
+
+      <!-- v0.1.0 -->
+      <article id="v0-1-0" class="release-card">
+        <div class="release-header">
+          <div>
+            <span class="release-badge">Fundação</span>
+            <h2 class="release-version">v0.1.0 — Manifesto Local-First &amp; Arquitetura Modular</h2>
+          </div>
+          <time class="release-date" datetime="2026-10-27">27 de Outubro de 2026</time>
+        </div>
+        <p class="release-summary">
+          Definição da arquitetura modular (<code>apps/desktop</code>, <code>packages/*</code>,
+          <code>internal/*</code>), design system editorial em papel claro e ardósia escura, e princípios de
+          soberania de dados acadêmicos.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <!-- RODAPÉ INSTITUCIONAL -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand-col">
+        <a class="brand" href="index.html" aria-label="Pulsares Research">
+          <img src="assets/pulsares-icon.png" alt="" />
+          <span>Pulsares Research</span>
+        </a>
+        <p class="footer-tagline">
+          Ambiente desktop pessoal e local-first para leitura profunda, anotações ancoradas, citações ABNT, fichamentos e projetos acadêmicos.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="guia-usuario.html">Guia de Uso</a></li>
+          <li><a href="screenshots.html">Galeria de Telas</a></li>
+          <li><a href="help.html">Ajuda &amp; FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="release.html">Notas de Release</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Documentação</h5>
+        <ul>
+          <li><a href="guia-usuario.html?cap=06-projetos-academicos-abnt">IDE ABNT &amp; Importador</a></li>
+          <li><a href="guia-usuario.html?cap=03-anotacoes-e-citacoes-abnt">Citações ABNT NBR</a></li>
+          <li><a href="guia-usuario.html?cap=08-privacidade-cofre-e-ia">Privacidade &amp; Cofre Local</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Repositório</h5>
+        <ul>
+          <li><a href="https://github.com/vitorkrewer/pulsares-research-web" target="_blank" rel="noreferrer">GitHub Oficial</a></li>
+          <li><a href="https://github.com/vitorkrewer/pulsares-research/releases" target="_blank" rel="noreferrer">Binários de Instalação</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-creator">
+        Desenvolvido por <a href="https://www.linkedin.com/in/vitorkrewer/" target="_blank" rel="noreferrer">Vitor Krewer</a>
+      </div>
+      <div>
+        © <span id="year"></span> Pulsares Research · Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=0.7.1"></script>
+</body>
+
+</html>

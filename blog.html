@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog de Engenharia &amp; Pesquisa — Pulsares Research</title>
+  <meta name="description"
+    content="Artigos técnicos, notas de arquitetura local-first, novidades de versão e guias de produtividade acadêmica da equipe do Pulsares Research." />
+  <link rel="icon" type="image/png" href="assets/pulsares-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=0.7.1" />
+</head>
+
+<body>
+  <!-- HEADER FIXO -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pulsares Research">
+      <img src="assets/pulsares-icon.png" alt="Logo Pulsares Research" />
+      <span>Pulsares Research</span>
+    </a>
+
+    <nav class="header-nav" aria-label="Navegação principal">
+      <a href="recursos.html">Recursos</a>
+      <a href="guia-usuario.html">Guia de Uso</a>
+      <a href="index.html#arquitetura">Arquitetura</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="help.html">Ajuda &amp; FAQ</a>
+      <a class="active" href="blog.html">Blog</a>
+      <a href="release.html">Releases</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-download-btn" href="index.html#downloads">
+        <span>Baixar</span>
+        <span id="header-version-badge">v0.7.1</span>
+      </a>
+      <button class="menu-toggle-btn" id="mobile-menu-toggle" type="button" aria-label="Abrir menu de navegação"
+        aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- DRAWER MOBILE -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Navegação mobile" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="recursos.html">Recursos</a>
+      <a href="guia-usuario.html">Guia de Uso</a>
+      <a href="index.html#arquitetura">Arquitetura Técnica</a>
+      <a href="screenshots.html">Galeria de Telas</a>
+      <a href="help.html">Ajuda &amp; FAQ</a>
+      <a class="active" href="blog.html">Blog</a>
+      <a href="release.html">Notas de Release (Changelog)</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a class="btn-drawer-download" href="index.html#downloads">
+        <span>Baixar Pulsares Research</span>
+      </a>
+      <span class="drawer-version-tag">Versão mais recente: v0.7.1</span>
+    </div>
+  </aside>
+
+  <main id="top">
+    <section class="page-hero">
+      <div class="starfield" aria-hidden="true"></div>
+      <p class="kicker">Diário de Engenharia &amp; Metodologia</p>
+      <h1 class="page-title">Blog do Pulsares Research</h1>
+      <p class="page-subtitle">
+        Bastidores técnicos da arquitetura local-first em Go + SQLite, novidades de cada ciclo de release e práticas
+        para pesquisa acadêmica rastreável.
+      </p>
+    </section>
+
+    <section class="blog-container">
+      <div id="blog-posts-grid" class="blog-grid">
+        <!-- Populated dynamically from posts/posts.json -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="footer-creator">
+        Desenvolvido por <a href="https://www.linkedin.com/in/vitorkrewer/" target="_blank" rel="noreferrer">Vitor Krewer</a>
+      </div>
+      <div>
+        © <span id="year"></span> Pulsares Research · <a href="release.html">Changelog</a> · <a href="guia-usuario.html">Guia de Uso</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=0.7.1"></script>
+  <script>
+    (function () {
+      const grid = document.getElementById('blog-posts-grid');
+      fetch('posts/posts.json')
+        .then(function (r) { return r.json(); })
+        .then(function (posts) {
+          grid.innerHTML = posts.map(function (post) {
+            const featuredClass = post.featured ? ' blog-card-featured' : '';
+            return (
+              '<article class="blog-card' + featuredClass + '">' +
+              '<div class="blog-card-meta">' +
+              '<span class="blog-badge">' + post.version + '</span>' +
+              '<span class="blog-category">' + post.category + '</span>' +
+              '<time datetime="' + post.date + '">' + post.displayDate + '</time>' +
+              '</div>' +
+              '<h2 class="blog-card-title"><a href="post.html?slug=' + post.slug + '">' + post.title + '</a></h2>' +
+              '<p class="blog-card-excerpt">' + post.excerpt + '</p>' +
+              '<div class="blog-card-footer">' +
+              '<span class="blog-reading-time">' + post.readingTime + '</span>' +
+              '<a href="post.html?slug=' + post.slug + '" class="blog-read-link">Ler artigo completo &rarr;</a>' +
+              '</div>' +
+              '</article>'
+            );
+          }).join('');
+        })
+        .catch(function () {
+          grid.innerHTML = '<p>Não foi possível carregar os artigos do blog.</p>';
+        });
+    })();
+  </script>
+</body>
+
+</html>
